@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TVAC ou HTVA</title>
+</head>
+<body>
+    <script>
+        // ENONCE
+        //-----------------------------------------
+        // Demande à l'utilisateur le prix de son ordinateur
+        // Demande-lui si le prix qu'il a donné est avec ou sans la TVA
+        // Si le prix était HTVA, écris le prix TVAC sur la page et change le titre de la page avec ce prix
+        // Si le prix était TVAC, écris le prix HTVA sur la page et change le titre de la page avec ce prix
+        // ---------------------------------------------
+
+        let prixOrdi=window.prompt("Quel est le prix de ton ordinateur ?");
+        prixOrdi=Number(prixOrdi);
+        const avecTva=window.confirm("Le prix renseigné est-il avec la TVA ?");
+        const taux=0.21;
+        const prixTvac=prixOrdi*(1+taux);
+        const prixHtva=prixOrdi/(1+taux);
+        if(avecTva===false) {
+            document.write(prixTvac);
+            document.title=prixTvac;
+        }
+        else {
+            document.write(prixHtva);
+            document.title=prixHtva;
+        }
+
+
+    </script>
+</body>
+</html>
+
+
+
+
+

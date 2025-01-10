@@ -1,0 +1,13 @@
+====== Editeur : Filosophia ======
+
+  *[[:jeux:pandemie|Pandémie]]
+
+===== Chez Philibert =====
+
+  *[[:jeux:start|Tous les jeux]]
+  *[[:thematiques:start|Toutes les thématiques]]
+  *[[:editeurs:start|Tous les éditeurs]]
+
+----
+
+[[:start|RETOUR A L'ACCUEIL]]

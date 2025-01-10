@@ -1,0 +1,13 @@
+# Ignorer les fichiers de logs
+*.log
+
+# Ignorer les fichiers temporaires
+*.tmp
+
+# Ignorer les dossiers spécifiques (si tu les as)
+logs/
+tmp/
+node_modules/
+vendor/
+
+# Ne PAS ignorer le dossier htdocs (important)

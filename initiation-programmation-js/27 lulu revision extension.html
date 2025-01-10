@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexions extensions</title>
+  </head>
+  <body>
+    <script>
+      //ENONCE
+      //--------------------------------------------------------------------------------
+      // Demande combien de flexion-extensions l'utilisateur est capable de faire
+      // écris dans la page le décompte du nombre de flexion-extensions que l'utilisateur est capable de faire et après la dernière, félicite-le !
+      // s'il ne sait pas en faire une seule, dis-lui qu'il serait temps de faire un peu de sport et propose lui de s'inscrire à une salle de fitness
+      // s'il refuse, écris dans la page que le sport est pourtant bon pour la santé
+      // s'il est d'accord, demande lui s'il veut faire appel à un coach sportif
+      // s'il répond par l'affirmative, écris dans la page les coordonnées d'un centre de fitness ainsi que le nom du coach qui s'occupera de lui, accompagné du prix qui est de 349€ / mois
+      // s'il ne souhaite pas de coach sportif, écris dans la page les coordonnées d'un centre de fitness ainsi que le prix qui est de 229€ / 3 mois
+
+      //PSEUDO-CODE
+      //--------------------------------------------------------------------------------
+      // Demande à l'utilisateur " Combien de flexions-extensions sais tu faire ? "et mets la réponse dans la boite : nbFlexionsExtensions
+      // Convertis nbFlexionsExtensions en Number
+      // Si nbFlexionsExtension >= 1 alors...
+      // Répète ...
+      // Pour un compteur i initialiser à nbFlexionsExtensions
+      // Tant que le compteur i>=1
+      // En décrémentant le compteur i
+      // Exécute les instructions suivantes :
+      // Écris dans le body i
+      // Écris dans le body " Félicitation ! "
+      // Sinon ...
+      // Demande à l'utilisateur de confirmer le message " Il serait temps de faire du sport. Veux tu t'inscrire à une salle de fitness ? " et mets la réponse dans la boite : inscriptionFitness
+      // Si inscriptionFitness === true alors ...
+      // Demande à l'utilisateur de répondre de confirmer le message " Veux-tu un coach sportif ? " et mets la réponse dans la boite : coachSportif
+      // Si coachSportif === true alors ...
+      // Écris dans le body le message " Life Style fitness, rue Joseph Jasperd 12, 4000 Liège. Ton coach sera Tony. Le prix s'élèvera à 349$ / mois."
+      // Sinon ...
+      // Écris dans le body le message " Life Style fitness, rue Joseph Jasperd 12, 4000 Liège. Le prix s'élèvera à 229$ tout les trois mois."
+      // Sinon ...
+      // Écris dans le body le message "Le sport est pourtant bon pour la santé"
+
+      // CODE
+      //--------------------------------------------------------------------------------
+      let nbFlexionsExtensions = window.prompt(
+        " Combien de flexions-extensions sais tu faire ?"
+      );
+      nbFlexionsExtensions = Number(nbFlexionsExtensions);
+
+      if (nbFlexionsExtensions >= 1) {
+        for (let i = nbFlexionsExtensions; i >= 1; i--) {
+          document.write(i + "<br/>");
+        }
+        document.write("Félicatation !");
+      } else {
+        const inscriptionFitness = window.confirm(
+          "Il serait temps de faire du sport. Veux tu t'inscrire à une salle de fitness ?"
+        );
+        if (inscriptionFitness === true) {
+          const coachSportif = window.confirm("Veux-tu un coach sportif ?");
+          if (coachSportif === true) {
+            document.write =
+              "Life Style fitness, rue Joseph Jasperd 12, 4000 Liège. Ton coach sera Tony. Le prix s'élèvera à 349$ / mois.";
+          } else {
+            document.write =
+              "Life Style fitness, rue Joseph Jasperd 12, 4000 Liège. Le prix s'élèvera à 229$ tout les trois mois.";
+          }
+        } else {
+          document.write = "Le sport c'est pourtant bon pour la santé";
+        }
+      }
+    </script>
+  </body>
+</html>

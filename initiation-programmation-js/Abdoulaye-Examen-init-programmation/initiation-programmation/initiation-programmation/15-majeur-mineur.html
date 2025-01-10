@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majeur ou mineur</title>
+</head>
+<body>
+    <script>
+        // ENONCE
+		// ---------------------------------------------
+		// Demande le prénom de l'utilisateur
+		// Demande son nom
+		// Demande son âge
+		// S'il est majeur, écris dans la page son nom, prénom, son âge, qu'il est majeur et change le titre de la page en "Vive la majorité"
+		// S'il est mineur, écris dans la page son nom, prénom, son âge, qu'il est mineur et change le titre de la page en "Encore un peu de patience"
+		// ---------------------------------------------
+
+        // PSEUDO-CODE
+        // Crée une boite prenom
+        // Demande à l'utilisateur de répondre au message : "Quel est ton prénom ?" et mets la réponse dans la boite prenom
+        // Crée une boite nom
+        // Demande à l'utilisateur de répondre au message : "Quel est ton nom ?" et mets la réponse dans la boite nom
+        // Crée une boite age
+        // Demande à l'utilisateur de répondre au message : "Quel est ton âge ?", convertis la reponse en Number et mets-la dans la boite age
+        // Si age>=18 alors ...
+            // ecris dans le body la concaténation : "Tu t'appelle "+prenom+" "+nom+", tu as "+age+" ans et tu es majeur."
+            // Modifie la propriété title de l'objet document avec comme valeur "Vive la majorité"
+        // Sinon ...
+            // ecris dans le body la concaténation : "Tu t'appelle "+prenom+" "+nom+", tu as "+age+" ans et tu es mineur."
+            // Modifie la propriété title de l'objet document avec comme valeur "Encore un peu de patience"
+
+
+        const prenom=window.prompt("Quel est ton prénom ?");
+        const nom=window.prompt("Quel est ton nom ?");
+        const age=Number(window.prompt("Quel est ton âge ?"));
+        if(age>=18) {
+            document.write("Tu t'appelle "+prenom+" "+nom+", tu as "+age+" ans et tu es majeur.");
+            document.title="Vive la majorité";
+        }
+        else {
+            document.write("Tu t'appelle "+prenom+" "+nom+", tu as "+age+" ans et tu es mineur.");
+            document.title="Encore un peu de patience";
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>revision</title>
+</head>
+<body>
+
+    <script>
+        // PSEUDO-CODE
+        // Demande à l'utilisateur de répondre au message "Combien de flexions extension sais-tu faire ?" et mets la réponse dans la boite nbFlexionsExtensions
+        // Convertis nbFlexionsExtensions en Number
+        // Si nbFlexionsExtensions >= 1 alors ...
+            // Répète ...
+                // pour un compteur i initailisé à nbFlexionsExtensions
+                // tant que le compteur i >= 1
+                // en décrémentant le compteur i
+            // les inscrution suivantes :
+                // écris dans le body là concatenation suivante i + "flexions-extension <br>"
+            // ecris dans le body " félicitations ! "
+        // Sinon ... (il ne sais pas en faire)
+            // Demande à l'uitlisateur de confirmer le message "Il serait temps de faire du sport. veux-tu t'inscrire à une salle de fitness ?" et mets la réponse dans là boite inscriptionFitness
+            // Si inscriptionFitness === true alors ... (s'il s'inscrit au Fitness)
+                // Demande à l'utilisateur de confirmer le message "Vexu-tu un coach sportif ?" et mets là réponse dans la boite coachSportif
+                // Si coachSportif === true alors  (il veux un coach)
+                    // écris dans le body "Life Style Fitness, rue Joseph Jasperd 12, 4000 liège. Ton coach sera Tony. Le prix s'élèvera à 349€ / mois."
+                // Sinon ... (il ne veux pas de coach)
+                    // écris dans le body "Life Style Fitness, rue Joseph Jaspard 12, 4000 liège. Le prix s'élèvera à 229€ / 3 mois."
+            // Sinon ... (s'il ne veux pas s'inscrire)
+                    // écris dans le body "Le sport, c'est pourtant bon pour là santé ."
+
+
+        let nbFlexionsExtensions = window.prompt("Combien de flexions extension sais-tu faire ?")
+        nbFlexionsExtensions = Number(nbFlexionsExtensions)
+        
+        if (nbFlexionsExtensions >= 1) {
+            for (let i = nbFlexionsExtensions; i >= 1; i--) {
+                document.write(i + "<br>")
+            }
+            document.write("Félicitations !")
+        } else {
+            const inscriptionFitness = window.confirm("Il serait temps de faire du sport. veux-tu t'inscrire à une salle de fitness ?")
+            if (inscriptionFitness === true) {
+                const coachSportif = window.confirm("Veux-tu un coach sportif ?")
+                if (coachSportif === true) {
+                    document.write("Life Style Fitness, rue Joseph Jasperd 12, 4000 liège. Ton coach sera Tony. Le prix s'élèvera à 349€ / mois.")
+                } else {
+                    document.write("Life Style Fitness, rue Joseph Jaspard 12, 4000 liège. Le prix s'élèvera à 229€ / 3 mois.")
+                }
+            } else {
+                document.write("Le sport, c'est pourtant bon pour là santé .")
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

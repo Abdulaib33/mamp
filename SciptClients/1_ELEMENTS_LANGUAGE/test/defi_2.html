@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- / ./exercices_boucles_3.html
+/*
+   1. Créez une constante 'users' contenant un tableau indexé avec
+      dans chacun des 3 tiroirs un objet avec 2 propriétés :
+          - prenom
+          - mail
+   2. Parcourez le tableau et faites un console.log du nom et du mail de chaque tiroir
+      avec les 3 syntaxes
+*/ -->
+
+<script>
+
+    const user = [
+        {
+            prenom: "Abdoulaye",
+            mail: "Abdulaibayo08@gmail.com"
+        },
+        {
+            prenom : "Abdoulaye33",
+            mail: "Abdulaibayo@outlook.fr"
+        },
+        {
+            prenom : "Abdoulayeb33",
+            mail: "Abdulaibayo08@outlook.fr"
+        }
+    ]
+
+
+
+        const cart = [
+            {
+                name: "Abdoulaye",
+                price: 20
+            },
+            {
+                name: "Abdoulaye33",
+                price : 200
+            },
+            {
+                name: "Abdoulayeb33",
+                price : 100000000
+            }
+        ]
+
+        console.log(cart)
+
+
+
+
+        cart[0].price = 40
+        cart[0].name = "COUCOU"
+
+        console.table(cart)
+</script>
+    
+</body>
+</html>

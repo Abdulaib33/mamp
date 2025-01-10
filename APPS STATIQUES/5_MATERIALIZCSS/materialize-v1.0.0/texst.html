@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Film préféré</title>
+  </head>
+  <body>
+    <script>
+
+
+                              //PSEUDO CODE QUESTION 1
+                              /*
+                              Crée une boite "let vitesseUtilisateur"
+                              Demande à l'utilisateur de confirmer avec comme message "A quelle vitesse rouliez vous sur l'autoroute ?"
+                              Met la réponse dans la boite vitesse
+                                      Si sa vitesse est entre 80 et 120, écris dans le body "vous rouliez trop vite"
+                                      Sinon si sa vitesse est plus petite que 80, écris dans le body le message qui dit "Votre vitesse est trop adéquate"
+                                      Sinon si sa vitesse est plus petit que 80, écris dans le body avec comme message "Vous rouliez trop lentement"
+                                      */
+
+
+
+
+
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                            // QUESTION 2
+
+                            //Mémorise la réponse de l'utilisateur auquel tu demande son âge, avec le message:Quel est votre âge ?
+                            // Affiche, automatiquement sur la page, la listes des
+                            //nombres depuis le'âge de l'utilisateur jusqu'a 0(inlus),
+                            // en faisant un retour à la ligne après chaque nombre
+
+
+
+                            // PSEUDO-CODE/ QUESTION 2
+                        // --------------------------------------------------------
+                        // Demande à l'utilisateur de répondre à la question :
+                        // "Quel est votre âge ?"
+                        // Mets la réponse dans une boîte : age
+                        // Fais une boucle en décrémentant
+                            // Répète
+                            // pour un compteur i initialisé à age
+                            // tant que le compteur i est >= 0
+                            // en décrémentant le compteur i
+                            // les instructions suivantes :
+                            // Écris dans le body le compteur i suivi d'un retour à la ligne
+
+                        //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ //JAVASCRIPT / QUESTION 3
+
+    //  Crée un tableau artistes contenant quelques artistes (par exemple : "Angèle", "Stromae", "Zazie").
+    // Demande à l'utilisateur de répondre à deux questions via des window.prompt() pour saisir deux artistes préférés.
+    // Ajoute ces deux artistes dans le tableau artistes en utilisant la méthode push().
+    // Change le nom du deuxième artiste de la liste en ajoutant " - Nouveau" (par exemple, "Stromae" devient "Stromae - Nouveau").
+    // Crée une liste HTML ordonnée (<ol>) pour afficher tous les artistes du tableau.
+    // Affiche cette liste dans la page.
+                                    
+        // const listesArtistes = [
+        //    "Angèle",
+        //     "Stromae",
+        //     "Zazie"
+        //  ]
+        //  let premierArtiste = window.prompt("Qui est ton artiste prefere ")
+        //  let deuxiemeArtiste = window.prompt("Qui est ton deuxième artiste prefere")
+
+        //  listesArtistes.push(premierArtiste)
+        //  listesArtistes.push(deuxiemeArtiste)
+
+        //  listesArtistes[1] = "Stromae - Nouveau"
+
+        //  for (i = 0; i < listesArtistes.length; i++ ) {
+        //      document.write((i + 1) + " . " + listesArtistes[i] + "<br>")
+        //  }
+
+
+        
+
+
+            
+            // let artistes = [
+            //   "Angèle",
+            //   "Stromae",
+            //   "Zazie"
+            // ];
+
+            // const artistePrefere = window.prompt("Quel est ton chanteur/chanteuse préféré(e) ?");
+            // const autreArtistePréféré = window.prompt("Quel est ton autre chanteur/chanteuse préféré(e) ?");
+
+            // artistes.push(artistePrefere);
+            // artistes.push(autreArtistePréféré);
+
+            // artistes[1] = "Stromae - Nouveau";
+
+            
+
+            // for (let i = 0; i < artistes.length; i++) {
+            //   document.write((i + 1) + " . " + artistes[i] + "<br>")
+            // }
+
+          
+
+            
+
+
+
+            
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//JAVASCRIPT/ QUESTION 4
+
+//       QUESTION 4 :
+// Consigne :
+
+// Crée un tableau listeCours contenant les noms de plusieurs cours (par exemple : "Anglais", "Environnement Web", "Initiation JS", etc.).
+// Demande à l'utilisateur, via un window.prompt(), s'il a réussi le cours "Environnement Web" avec une réponse "oui" ou "non".
+// Si la réponse est "oui", modifie l'élément "Environnement Web" du tableau en ajoutant " - Cours validé".
+// Si la réponse est "non", mets en gras l'élément "Environnement Web" dans la liste HTML générée.
+// Affiche tous les cours dans une liste HTML ordonnée (<ol>), en appliquant les modifications selon la réponse de l'utilisateur.
+
+
+    const listesCours = [
+        "Anglais",
+        "Environnement Web",
+        "Initiation JS"
+    ]
+
+    let demandeEnvironment = window.prompt("as-tu reussi le cours Envrionnement web")
+
+    if (demandeEnvironment === "oui") {
+        listesCours[1] = "Environnement Web - Cours validé"
+        for (i = 0; i < listesCours.length; i ++) {
+            document.write((i + 1) + " . " + listesCours[i] + "<br>")
+        }
+    } else {
+        for( let i = 0; i <listesCours.length; i++) {
+            if (listesCours[i] === listesCours[1]) {
+                document.write((i + 1) + " . " + "<strong>" + listesCours[i] + "</strong>" + "<br>")
+            } else if (listesCours[i] != listesCours[1]) {
+                document.write((i + 1) + " . " + listesCours[i] + "<br>")
+            } else {
+                console.log(listesCours[i])
+            }  
+        }
+    }
+
+
+                        //       const listeCours = [
+                        //   "Anglais",
+                        //   "Environnement Web",
+                        //   "Initiation JS",
+                        //   "Technique de l'image",
+                        //   "SGBD",
+                        //   "Création de sites statiques",
+                        // ];
+
+                        // const reponse = window.prompt("As-tu réussi le cours d'Environnement Web ? (oui/non)");
+
+                        // let coursEnvironnement = "<ol>";
+
+                        // if (reponse === "oui") {
+                        //   for (let i = 0; i < listeCours.length; i++) {
+                        //     if (listeCours[i] === "Environnement Web") {
+                        //       listeCours[i] = "Environnement Web - Cours validé";
+                        //     }
+                        //     coursEnvironnement += "<li>" + listeCours[i] + "</li>";
+                        //   }
+                        // } else if (reponse === "non") {
+                        //   for (let i = 0; i < listeCours.length; i++) {
+                        //     if (listeCours[i] === "Environnement Web") {
+                        //       coursEnvironnement += "<li><strong>" + listeCours[i] + "</strong></li>";
+                        //     } else {
+                        //       coursEnvironnement += "<li>" + listeCours[i] + "</li>";
+                        //     }
+                        //   }
+                        // } else {
+                        //   document.write("Réponse non valide. Veuillez répondre par 'oui' ou 'non'.");
+                        // }
+
+                        // document.write("</ol>");
+
+                        // for (let i = 0; i < cours.length; i++) {
+                        // document.write("<br><br>Tu peux maintenant parcourir cette page pour voir les résultats.");
+                        // }
+
+                            
+//--------------------------------------------------------------------------------------------------------------------------------
+    </script>
+  </body>
+</html>

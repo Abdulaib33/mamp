@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boite à outils</title>
+</head>
+<body>
+    <script>
+        // ENONCE
+        // ------------------------------------------------
+        // Demande à l'utilisateur combien d'outils il possède dans sa boite à outils
+        // S'il en possède au moins 1, écris dans la page "je compte 1 outil(s), je compte 2 outil(s), je compte 3 outil(s), ..."
+        // et ainsi de suite jusqu'à rencontrer le nombre d'outils déclaré par l'utilisateur
+        // S'il n'en possède pas, écris dans la page "Tu n'as pas d'outil et c'est bien dommage"
+        // ------------------------------------------------
+
+        // PSEUDO-CODE
+        // Crée la boite nbOutils
+        // Demande à l'utilisateur de répondre au message "Combien d'outils as-tu dans ta boite à outils ?" et mets la réponse dans la boite nbOutils
+        // Convertis nbOutils en Number
+        // Si nbOutils>=1 alors ...
+            // Répète ...
+                // pour un compteur i innitialisé à 1
+                // tant que le compteur i<=nbOutils
+                // en incrémentant le compteur i
+            // les instructions suivantes :
+                // écris dans le body la concaténation "Je compte "+i+" outil(s)<br>"
+        // Sinon ...
+            // écris dans le body "Tu n'as pas d'outils et c'est bien dommage."
+
+        let nbOutils=window.prompt("Combien d'outils as-tu dans ta boite à outils ?");
+        nbOutils=Number(nbOutils);
+        if(nbOutils>=1) {
+            for(let i=1;i<=nbOutils;i++) {
+                document.write("Je compte "+i+" outil(s)<br>");
+            }
+        }
+        else {
+            document.write("Tu n'as pas d'outils et c'est bien dommage.");
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+

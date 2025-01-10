@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ticket concert</title>
+</head>
+<body>
+    
+    <script>
+        // PSEUDO-CODE 
+        // Demande à l'utilisateur de répondre au message "Combien de tickets as-tu pour le concert de Coldplay ?" et mets la réponse dans la boite nombreTIckets
+        // Convertis nombreTickets en Number
+        // Répète ...
+            // pour un compteur i initialisé à 1
+            // tant que i <= nombreTickets
+            // en incrémentant le compteur 1
+        // les instructions suivante :
+            // Demande à l'utilisateur de répondre à la concaténation "Quel est le prix du ticket n-"+i et mets la reponse dans la boite prixTicket
+            // Convertis prixTicket en Number
+            // Fais le calcul coutTotal += prixTicket
+        // Demande à l'utilisateur de confirmer le message "As-tu un code promo ? et met la réponse dans la boite codePromo "
+        // Si ... alors ...
+            // fais le calcul : coutTotal *= 0.9
+        // Sinon ....
+            // lance une fenêtre d'alerte avec comme message "Dommage, tu paieras le prix plein."
+        // Ecris dans le body la concaténation "Le coût total de vos tickets est de : " + coutTotal
+
+
+        let nombreTIckets = Number(window.prompt("Combien de tickets as-tu pour le concert de Coldplay"))
+        
+        let coutTotal = 0
+        for (let i = 1; i <= nombreTIckets; i++) {
+            let prixTicket = window.prompt("Quel est le prix du ticket n- " + i)
+            prixTicket = Number(prixTicket)
+            coutTotal += prixTicket 
+        }
+        const codePromo = window.confirm("as-tu un code promo ?")
+        if (codePromo === true) {
+            coutTotal *= 0.9
+        }
+        else {
+            window.alert("Dommage, tu paieras le prix plein.")
+        }
+        document.write("Le coût total de vos tickets est de : " + coutTotal)
+
+
+
+    </script>
+
+</body>
+</html>

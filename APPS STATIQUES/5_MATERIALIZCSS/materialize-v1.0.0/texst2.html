@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tableau</title>
+  </head>
+  <body>
+    <script>
+
+      // Crée un tableau artistes contenant quelques artistes (par exemple : "Angèle", "Stromae", "Zazie").
+      // Demande à l'utilisateur de répondre à deux questions via des window.prompt() pour saisir deux artistes préférés.
+      // Ajoute ces deux artistes dans le tableau artistes en utilisant la méthode push().
+      // Change le nom du deuxième artiste de la liste en ajoutant " - Nouveau" (par exemple, "Stromae" devient "Stromae - Nouveau").
+      // Crée une liste HTML ordonnée (<ol>) pour afficher tous les artistes du tableau.
+      // Affiche cette liste dans la page.
+
+      const listeArtistePrefere = [
+          "Angele",
+          "Stromae",
+          "Zazie"
+      ]
+
+      let artistePrefere1 = window.prompt("Quelle est ton 1er artiste préféré?");
+      let artistePrefere2 = window.prompt("Quelle est ton 2eme artiste préféré ?");
+
+      listeArtistePrefere.push(artistePrefere1);
+      listeArtistePrefere.push(artistePrefere2);
+
+      for( i = 0; i < listeArtistePrefere.lenght; i++){
+
+          document.write((i+1) + " . " + listeArtistePrefere[i]);
+      }
+    </script>
+  </body>
+</html>

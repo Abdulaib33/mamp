@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syles musiques</title>
+</head>
+<body>
+    
+    <script>
+
+        // ENONCE
+        // ---------------------------------------
+        // Crée un tableau avec les styles de musique suivants : <<Jazz>> et <<Blues>.
+        // Ajoute <<Trash-Musette>> à la fin.
+        // Remplace la valeur du milieu par <<Ambient>>.
+        // Supprime la première valeur du tableau et affiche-la dans une fenêtre.
+        // Ajoute "Reggae" et "Dub" au début du tableau.
+        // Ecris sur la page tout les styles de musique du tableau de manières ordeonnée (en utilisant les balises ol -> li)
+
+        const styleMusique = [
+
+            "Jazz",
+            "Blues",
+
+        ]
+
+        styleMusique.push("Trash-Musette")
+        styleMusique[1] = "Ambients"
+        styleMusique.shift([0])
+        window.alert("Jazz")
+        styleMusique.unshift("Reggae")
+        styleMusique.unshift("Dub")
+
+        document.write("<ol>")
+        for (let i = 0; i < styleMusique.length; i++) {
+            document.write("<li>" + styleMusique[i] + "<li>")
+        }
+        document.write("</ol>")
+
+
+    </script>
+
+    <ol>
+        <li>test3</li>
+        <li>test2</li>
+        <li>test1</li>
+    </ol>
+
+</body>
+</html>

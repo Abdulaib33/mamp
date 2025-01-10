@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Péchés capitaux</title>
+</head>
+<body>
+    <script>
+        // ENONCE
+        // ------------------------------------------------
+        // Demande à l'utilisateur s'il souhaite connaître les 7 péchés capitaux
+        // En fonction de sa réponse, écris la liste ordonnée (en utilisant ol->li) des 7 des péchés capitaux sachant que ceux-ci sont stockés dans un tableau
+        // ------------------------------------------------
+        
+        const pechesCapitaux=[
+            "Colère",
+            "Avarice",
+            "Envie",
+            "Luxure",
+            "Gourmandise",
+            "Paresse",
+            "Orgueil"
+        ];
+        const souhaiteConnaitrePeches=window.confirm("Veux-tu connaitre les 7 péchés capitaux ?");
+        if(souhaiteConnaitrePeches===true) {
+            document.write("<ol>");
+            for(let i=0;i<pechesCapitaux.length;i++) {
+                document.write("<li>"+pechesCapitaux[i]+"</li>");
+            }
+            document.write("</ol>");
+        }
+        else {
+            document.write("Tant pis.");
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+

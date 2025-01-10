@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jours de la semaine</title>
+</head>
+<body>
+    <script>
+        // ENONCE
+        // ------------------------------------------------
+        // écris la liste ordonnée (sans utiliser ol->li) des 7 jours de la semaine, sachant que ceux-ci sont stockés dans un tableau
+        // ------------------------------------------------
+
+        // PSEUDO-CODE
+        // ------------------------------------------------
+        // Construis une armoire : joursSemaine
+        /* Range dans les tiroirs : 
+            "Lundi",
+            "Mardi",
+            "Mercredi",
+            "Jeudi",
+            "Vendredi",
+            "Samedi",
+            "Dimanche"
+        */
+        // Ouvre les tirois n°0 à n°6 de l'armoire joursSemaine
+            // pour un compteur i initialisé à 0
+            // tant que le compteur i<joursSemaine.length
+            // en incrémentant le compteur i
+        // et exécute les instructions suivantes :
+            // écris dans le body la concaténation : (i + 1) + ". " + joursSemaine[i] + "<br />"
+
+        const joursSemaine=[
+            "Lundi",
+            "Mardi",
+            "Mercredi",
+            "jeudi",
+            "Vendredi",
+            "Samedi",
+            "Dimanche"
+        ];
+        for(let i=0;i<joursSemaine.length;i++) {
+            document.write((i+1)+". "+joursSemaine[i]+"<br>");
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+

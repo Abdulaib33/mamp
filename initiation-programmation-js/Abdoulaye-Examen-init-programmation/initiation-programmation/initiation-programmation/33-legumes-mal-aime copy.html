@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Légume mal aimé</title>
+</head>
+<body>
+    <script>
+        // ENONCE
+        // --------------------------------------------------------------
+        // Stocke la liste de ces légumes dans l'ordre suivant :
+        // Chicon
+        // Brocoli
+        // Chou-fleur
+        // Demande à l'utilisateur quel est le légume qu'il aime le moins parmi la liste
+        // Supprime le légume en question de la liste et écris sur la page la liste des légumes restants de manière inversément ordonnée (du dernier au premier)
+        // --------------------------------------------------------------
+
+        const legumes=[
+            "Chicon",
+            "Brocoli",
+            "Chou-fleur",
+        ];
+        const legumeMalAime=window.prompt("Quel est le légume que tu aimes le moins parmi ceux-ci : "+legumes);
+        const numTiroirLegumeMalAime=legumes.indexOf(legumeMalAime);
+        legumes.splice(numTiroirLegumeMalAime,1);
+        for(let i=legumes.length-1;i>=0;i--) {
+            document.write(i+". "+legumes[i]+"<br>");
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,26 @@
+/* CONSIGNES :
+    H1: Blue 
+    H2: Text en Orange
+
+    gray en couleur de fond sur le tout document
+
+    Texte Green sur le premier paragraphe et le 2ème lien 
+
+    Color, background */
+
+
+h1 {
+    color: blue;
+}
+
+h2 {
+    color: orange;
+}
+
+.container {
+    background-color: gray;
+}
+
+.text-green {
+    color: green;
+}

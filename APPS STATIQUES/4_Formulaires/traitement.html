@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Les balises de formulaire</h1>
+
+    <form action="test1.html" method="get" enctype="multipart/form-data">
+
+        <input type="text" name="firstname" placeholder="enter your first name ">
+        <input type="text" name="lastname" placeholder="enter you last name">
+        <input type="submit">
+
+        <input type="checkbox" name="style" value="Métal">
+        <input type="checkbox" name="style" value="HipHop">
+        <input type="checkbox" name="style" value="Classique"> <br>
+
+        Groupe de button radio :
+        <input type="radio" name="groupe_sanguin" value="0" checked="checked">0
+        <input type="radio" name="groupe_sanguin" value="A">A
+        <input type="radio" name="groupe_sanguin" value="B"> B <br>
+
+        <input type="hidden" name="lang" value="fr">
+
+        <!-- Input HTML 5 -->
+        <input type="color" name="" id="">
+        <input type="date" name="" id="">
+        <input type="datetime" name="" id="">
+        <input type="email" name="" id="">
+        <input type="month" name="" id="">
+        <input type="time" name="" id="">
+        <input type="week" name="" id="">
+        <input type="number" name="" id="">
+        <input type="range" name="" id="">
+        <input type="tel" name="" id="">
+        <input type="url" name="" id="" required="required">
+        <input type="text" name="" id="" required="required">
+
+        <!-- Autres éléments de formulaires -->
+        <textarea name="" id="">COUCOU</textarea>
+
+        <select name="" id="">
+            <option value="" disabled="disabled" selected="selected">
+                Choose your language
+            </option>
+            <option value="">french</option>
+            <option value="">nederland</option>
+            <option value="">english</option>
+        </select>
+
+
+    <!-- Conditon pour un form foncionnel
+        1. action: chemin vers le fichier de traitement
+        2. methode: GET/POST par ou   sont envoyées les données
+            GET: barre d'URL
+            POST: postdata
+        
+        -->
+
+        <!-- Bouttons -->
+        <input type="button" value="coucou">
+        <input type="button" value="Coucou">
+        <input type="reset" value="">
+        <input type="submit" value="">
+    
+    </form>
+    
+</body>
+</html>

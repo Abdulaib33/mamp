@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+
+        .link {
+            color: orange;
+        }
+        .link:hover, .link:active {
+            background-color: red;
+            color: red;
+        }
+
+        .active .link {
+            background-color: red;
+            color: white;
+        }
+
+        /* .link:visited {
+            background-color: blue;
+        } */
+    </style>
+
+    <h1>Selecteurs des liens</h1>
+
+    <!-- nav>ul>li*3a.link>{lien $} -->
+
+    <nav>
+        <ul>
+            <li class="active"><a href="" class="link">lien 1</a></li>
+            <li><a href="#" class="link">lien 2</a></li>
+            <li><a href="" class="link">lien 3</a></li>
+        </ul>
+    </nav>
+    
+</body>
+</html>

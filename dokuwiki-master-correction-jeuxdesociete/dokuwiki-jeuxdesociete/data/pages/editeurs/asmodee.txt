@@ -1,0 +1,14 @@
+====== Editeur : Asmodéee ======
+
+  *[[:jeux:duplik|Duplik]]
+  *[[:jeux:smallworld|Small World]]
+
+===== Chez Philibert =====
+
+  *[[:jeux:start|Tous les jeux]]
+  *[[:thematiques:start|Toutes les thématiques]]
+  *[[:editeurs:start|Tous les éditeurs]]
+
+----
+
+[[:start|RETOUR A L'ACCUEIL]]

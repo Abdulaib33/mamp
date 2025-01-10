@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sondonge 3 artistes préférés</title>
+</head>
+<body>
+    <script>
+       // ENONCE
+        // Informe l'utilisateur que l'on réalise un sondage sur ses artistes préférés.
+        // Demande à l'utilisateur de citer ses 3 artistes préférés.
+        // Demande une validation avec les choix de l'utilisateur.
+        // Demande ensuite à l'utilisateur de choisir son artiste favori parmi les trois précédemment données.
+        // Affiche sur la page son artiste favori en titre de niveau 1 en précisant que c'est un très bon choix.
+        // -------------------------------------------------------------
+
+        // PSEUDO-CODE
+        // Lance une alerte avec comme message : "Nous faisons un sondage sur tes 3 artistes préférés."
+        // Crée une boite : artistePrefere1
+        // Demande à l'utilisateur de répondre au message "Quel est ton premier artiste préféré ?" et mets la réponse dans la boite artistePrefere1
+        // Crée une boite : artistePrefere2
+        // Demande à l'utilisateur de répondre au message "Quel est ton second artiste préféré ?" et mets la réponse dans la boite artistePrefere2
+        // Crée une boite : artistePrefere3
+        // Demande à l'utilisateur de répondre au message "Quel est ton troisième artiste préféré ?" et mets la réponse dans la boite artistePrefere3
+        // Demande à l'utilisateur de confirmer la concaténation : "Voici tes trois films préférés : "+artistePrefere1+", "+artistePrefere2+" et "+artistePrefere3+". Valide tes choix."
+        // Crée la boite : artisteFavori
+        // Demande à l'utilisateur de répondre à la concaténation : "Parmis tes trois artistes préférés, quelle est ton favori ? Pour rappel, voici les trois artistes que tu as rensignés précédemment : "+artistePrefere1+", "+artistePrefere2+" et "+artistePrefere3 et mets la réponse dans la boite : artisteFavori
+        // Ecris dans le body la concaténation : "<h1>"+artisteFavori+" est un très bon choix</h1>"
+
+        window.alert("Nous faisons un sondage sur tes 3 artistes préférés.");
+        const artistePrefere1=window.prompt("Quel est ton premier artiste préféré ?");
+        const artistePrefere2=window.prompt("Quel est ton deuxième artiste préféré ?");
+        const artistePrefere3=window.prompt("Quel est ton troisième artiste préféré ?");
+        window.confirm("Voici tes trois artistes préférés : "+artistePrefere1+", "+artistePrefere2+" et "+artistePrefere3+". Valide tes choix.");
+        const artisteFavori=window.prompt("Parmis tes trois artistes préférés, quelle est ton favori ? Pour rappel, voici les trois artistes que tu as renseigné précédemment : "+artistePrefere1+", "+artistePrefere2+" et "+artistePrefere3);
+        document.write("<h1>"+artisteFavori+" est un très bon choix</h1>");
+    </script>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events etc</title>
+</head>
+<body>
+    
+    <!-- Crée un compteur qui s'incrémente à chaque clic sur un bouton. -->
+
+    <button type="button" onclick="myFunctionClick()">Click me</button>
+    <p>i count everytime you click on the button "click me" : <a id="count">0</a></p>
+
+    <script>
+        var clique = 0
+        function myFunctionClick() {
+            clique += 1;
+            document.getElementById("count").innerHTML = clique
+        }
+
+// Ajoute un champ de texte et affiche en temps réel ce que l'utilisateur tape dans un paragraphe.
+            
+            document.getElementById("userInput").addEventListener("input", function() { // CECI DOIS ETRE UN FUNCTION 
+                                                                                        // NORMALEMENT MAIS CA NE MARCHE PAS
+                document.getElementById("userInput").value = document.getElementById("userInputDisplayed").value
+            });
+    </script>
+
+    <input type="text" id="userInput">
+    <p id="userInputDisplayed"></p>
+
+
+
+</body>
+</html>

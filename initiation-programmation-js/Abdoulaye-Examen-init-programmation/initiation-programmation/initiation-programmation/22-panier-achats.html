@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier d'achats</title>
+</head>
+<body>
+    <script>
+        // ENONCE
+        // ------------------------------------------------
+        // Demande à l'utilisateur de saisir le nombre de produits dans son panier d'achat
+        // Demander à l'utilisateur de saisir le prix de chaque produit un à un
+        // Calcule le total des achats
+        // Affiche dans la page le total avec un message
+        // ------------------------------------------------
+
+        const nbProduits=Number(window.prompt("Combien as-tu de produits dans ton panier ?"));
+        let totalAchats=0;
+        for(let i=1;i<=nbProduits;i++) {
+            let prixProduits=Number(window.prompt("Saisis le prix du produit n°"+i));
+            totalAchats+=prixProduits;
+        }
+        document.write("Le total de tes achats s'élève à : "+totalAchats);
+    </script>
+</body>
+</html>
+
+
+
+
+

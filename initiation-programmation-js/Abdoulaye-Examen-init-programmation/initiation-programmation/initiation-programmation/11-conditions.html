@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions</title>
+</head>
+<body>
+    <script>
+        /*
+            if(condition) {
+                instructions si la condition est respectée
+                instructions si la condition est vraie
+            }
+            else {
+                instructions si la condition n'est pas respectée
+                instructions si la condition est fausse
+            }
+        */
+    //    const reponse=window.confirm("Aimes-tu le JavaScript ?");
+    //    if(reponse===true) {
+    //         document.write("Tu aimes le JavaScript, et ça c'est cool !");
+    //    }
+    //    else {
+    //     document.write("Tu n'aimes pas le JavaScript, et ça c'est pas cool !");
+    //    }
+
+        const reponse=window.prompt("Qu'as-tu mangé ce midi ?");
+        if(reponse===null) {
+            document.write("Excuse-moi de te demnander ce que tu as mangé ce midi.");
+        }
+        else {
+            document.write(reponse+", super choix.");
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+

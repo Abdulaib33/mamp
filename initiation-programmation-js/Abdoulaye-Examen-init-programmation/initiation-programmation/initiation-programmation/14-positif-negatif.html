@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positif ou négatif</title>
+</head>
+<body>
+    <script>
+        // ENONCE
+        // -----------------------------------------
+        // demande à l'utilisateur de saisir un nombre
+        // si le nombre est positif, avertis que le nombre est positif et écris le nombre dans la page
+        // si le nombre est négatif, avertis que le nombre est négatif et écris le nombre dans la page
+        // si le nombre est 0, avertis que le nombre est 0 et écris le nombre dans la page
+
+        const nombre=Number(window.prompt("Tape un nombre"));
+        if(nombre>0) {
+            window.alert("Le nombre choisi est positif");
+        }
+        else if(nombre<0) {
+            window.alert("Le nombre choisi est négatif");
+        }
+        else {
+            window.alert("Le nombre choisi est 0");
+        }
+        
+        document.write(nombre);
+        
+    </script>
+</body>
+</html>
+
+
+
+
+

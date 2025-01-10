@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fils d'action ou films d'animation</title>
+</head>
+<body>
+
+    <script>
+        // ENONCE 
+        // ---------------------------------------------
+        // Demande à l'utilisateur de taper 1 s'il aime les films d'actions, ou 2 s'il préfères les films d'animation 
+        // En fonction de sa réponse, donne-lui une liste ordonée de films d'actions (sans utiliser <ol>) ou une liste à puce de films d'animation (en utilisant <ul> )
+        // NB : attention à gérer l'erreur s'il tape autre chose qu'un chiffre !
+        // --------------------------------------------
+
+
+
+        // const demaneFilmsPrefere = Number(window.prompt("tape \"1\" si tu-aime les films d'actions ou tape \"2\" si tu préfères tu les films d'animation"))
+            
+        // const filmAnimation = [
+        //     "coucou 1st",
+        //     "coucou 2nd",
+        //     "coucou 3rd",
+        //     "coucou 4tg",
+        //     "coucou 5th",
+        //     "coucou 6th"
+        // ]
+
+        // const filmAction = [
+        //     "cars 1st",
+        //     "cars 2nd",
+        //     "cars 3rd",
+        //     "cars 4th",
+        //     "cars 5th",
+        //     "cars 6th"
+        // ]
+
+        
+
+        // if (demaneFilmsPrefere === 2 ) {
+
+        //     document.write("<ol>")
+        //     for (let i = 0; i <filmAnimation.length; i++) {
+                
+        //             document.write("<li>" + filmAnimation[i] + "<li>")
+        //     }
+        //     document.write("</ol>")
+
+
+        // } else if (demaneFilmsPrefere === 1) {
+
+        //     document.write("<ol>")
+        //     for (let i = 0; i <filmAction.length; i++) {
+                
+        //             document.write("<li>" + filmAction[i] +  "<li>")
+        //     }
+        //     document.write("</ol>")
+
+        // } else {
+        //     window.alert("Désolé si tu tappe autres choses que \"1\" ou \"2\" tu ne saura pas.... ")
+        // }
+
+
+
+        // CORRECTION 
+
+
+        const filmsCorrectionActions = [
+            "Die Hard",
+            "SpiderMan",
+            "Mission Impossible"
+        ]
+
+        const filmsCorrectionAnimation = [
+            "Blanche neige",
+            "Les Indestructibles",
+            "Vice Versa"
+        ]
+
+        const choixFilms = Number(window.prompt("Pour les films d'action, tapez \"1\" et pour les fims d'animation, tapez \"2\" "))
+        
+        if (choixFilms === 1) {
+
+            for (let i = 0; i < filmsCorrectionActions.length; i++) {
+
+                document.write((i + 1) + ". " + filmsCorrectionActions[i] + "<br>")
+
+            }
+
+        } else if (choixFilms === 2) {
+
+            for (let i = 0; i < filmsCorrectionAnimation.length; i++) {
+
+                document.write((i + 1) + ". " + filmsCorrectionAnimation[i] + "<br>")
+                
+            }
+
+        } else {
+            document.write("DEHHHHHHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOORRRRRRRRSSSSS !!!!!!!!!!!")
+        }
+
+
+    </script>
+    
+</body>
+</html>

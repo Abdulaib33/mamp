@@ -1,0 +1,19 @@
+====== Nos jeux de société ======
+
+  *[[agricola|Agricola]] ([[:thematiques:developpement|Développement]] - [[:editeurs:ystari|Ystari]])
+  *[[bruxelles|Bruxelles]] ([[:thematiques:encheres|Enchères]] - [[:editeurs:pearlgames|Pearl Games]])
+  *[[caylus|Caylus]] ([[:thematiques:developpement|Développement]] - [[:editeurs:ystari|Ystari]])
+  *[[duplik|Duplik]] ([[:thematiques:creativite|Créativité]] - [[:editeurs:asmodee|Asmodée]])
+  *[[ghoststories|Ghost Stories]] ([[:thematiques:cooperation|Coopération]] - [[:editeurs:reposprod|Repos Prod]])
+  *[[pandemie|Pandémie]] ([[:thematiques:cooperation|Coopération]] - [[:editeurs:filosophia|Filosophia]])
+  *[[smallworld|Small World]] ([[:thematiques:placement|Placement]] - [[:editeurs:asmodee|Asmodée]])
+  *[[tournay|Tournay]] ([[:thematiques:placement|Placement]] - [[:editeurs:pearlgames|Pearl Games]])
+
+===== Chez Philibert =====
+
+  *[[:thematiques:start|Toutes les thématiques]]
+  *[[:editeurs:start|Tous les éditeurs]]
+
+----
+
+[[:start|RETOUR A L'ACCUEIL]]

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer - Designer</title>
+</head>
+<body>
+    <script>
+        const coursDev = [
+            "Environnement",
+            "Initiation à la programmation",
+            "SGBD",
+            "Script client",
+            "Script serveur"
+        ];
+
+        const coursDes = [
+            "Environnement",
+            "UI Design",
+            "UX Design",
+            "CMS",
+            "App statiques"
+        ];
+
+        const section = window.prompt("Dans quelle section es-tu inscrit ? (dev / des)");
+        if(section==="dev") {
+            
+            for(let i=0;i<coursDev.length;i++) {
+                document.write((i+1)+coursDev[i]+"<br>");
+            }
+        }
+        else if(section==="des") {
+            
+            for(let i=0;i<coursDes.length;i++) {
+                document.write((i+1)+coursDes[i]+"<br>");
+            }
+        }
+        else {
+            document.write("Tu n'es visiblement pas inscrit.");
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+

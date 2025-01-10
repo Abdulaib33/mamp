@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Materialize Distant</title>
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+</head>
+<body>
+
+    <h1>Test Materialize Distant</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Consequuntur autem optio sit minus! Necessitatibus fugit facere officiis unde deleniti, corporis natus architecto culpa temporibus.
+         Deleniti laudantium ut magnam repudiandae sapiente!
+    </p>
+
+
+    <script>
+        let clique = 0;
+        function sayHello() {
+            clique += 1
+            document.getElementById("test").innerHTML = clique
+        }
+        
+    </script>
+
+    <input type="button" onclick="sayHello()" value="Say Hello">
+    <p>Click Counts : <a id="test">0</a></p>
+    
+</body>
+</html>

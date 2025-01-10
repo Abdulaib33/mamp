@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+</head>
+<body>
+
+    <script>
+        
+        // ENONCE
+        // -------------------------------------------
+        // Avertis l'utilisateur que le site sera inacessible à minuit
+        document.write("Le site sera inacessible à minuit");
+        window.alert("Le site sera inacessible à minuit");
+        // Avertis l'utilisateur que le site utilise des cookies et demande lui son accord
+        window.confirm("Le site utilise des cookies, acceptez-vous ?");
+        // Demande à l'utilisateur sa couleur préférée
+        let couleur = window.prompt("Quelle est votre couleur préférée ?");
+        // Change le titre de là page avec le nom de là couleur choisie
+        document.title = couleur;
+        // Ecris dans là page que le titre a été modifié en précisant là couleur
+        document.write("Le titre de la page a été modifié en " + couleur);
+        // -------------------------------------------
+
+        // CORRECTION
+        // -------------------------------------------
+        
+    </script>
+
+    <style>
+        body {
+            background-color: aqua;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-size: 1.5rem;
+            padding: 10%;
+        }
+    </style>
+    
+</body>
+</html>

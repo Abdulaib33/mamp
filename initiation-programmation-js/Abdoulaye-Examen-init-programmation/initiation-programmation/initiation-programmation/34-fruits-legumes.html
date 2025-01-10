@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits legumes</title>
+</head>
+<body>
+    <script>
+        // Demande à l'utilisateur s'il préfère les fruits ou les légumes
+        // En fonction de la préférence de l'utilisateur, stocke une liste d'aliments (soit des fruits, soit des légumes)
+        // Si la préférence n'est ni "fruits" ni "légumes", affiche un message d'erreur
+        // Demande à l'utilisateur quel est l'aliment qu'il aime le moins parmi la liste des aliments correspondants
+        // Vérifie si l'aliment donné par l'utilisateur existe dans la liste
+        // Si l'aliment n'est pas trouvé, affiche un message d'erreur
+        // Supprime l'aliment en question de la liste
+        // Affiche la liste des aliments restants de manière inversément ordonnée (sans utiliser ol -> li) et affiche sur la page un message qui précise quel aliment a été supprimé
+        // Si la liste est vide, affiche un message spécifique
+
+        const preference = prompt("Préférez-vous les fruits ou les légumes ? (fruits / légumes)");
+        let aliments;
+        if(preference==="fruits") {
+            aliments = [
+                "Pomme",
+                "Banane",
+                "Orange",
+                "Fraise"
+            ];
+        } 
+        else if(preference==="légumes") {
+            aliments = [
+                "Chicon",
+                "Brocoli",
+                "Chou-fleur",
+                "Carotte"
+            ];
+        } 
+        else {
+            document.write("<p>Veuillez saisir 'fruits' ou 'légumes' pour la préférence.</p>");
+        }
+        const alimentMalAime = prompt("Quel est l'aliment que vous aimez le moins parmi la liste : " + aliments.join(", "));
+        const indexAlimentMalAime = aliments.indexOf(alimentMalAime);
+        if(indexAlimentMalAime !== -1) {
+            aliments.splice(indexAlimentMalAime, 1);
+            for(let i=aliments.length-1;i>=0;i--) {
+                document.write((i)+". "+aliments[i]+"<br>");
+            }
+            document.write("J'ai retirer de la liste l'aliment : "+alimentMalAime);
+        }
+        else {
+            document.write("Je n'ai pas trouvé cet aliment dans la liste.");
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+

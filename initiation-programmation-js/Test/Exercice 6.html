@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modification du titre</title>
+</head>
+<body>
+    
+
+
+    <script>
+// Demande à l'utilisateur d'entrer un titre pour la page.
+// Modifie le titre de la page avec le texte que l'utilisateur a entré.
+// Affiche dans le document un message : "Le titre a été changé en : [nouveau titre]".
+
+
+        let titrePageOnglet = window.prompt("Entre le titre de là page")
+        
+        document.title = titrePageOnglet
+
+        document.write("Le titre à été changé en :" + titrePageOnglet)
+
+    </script>
+
+
+<style>
+    body {
+        background-color: aqua;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        font-size: 1.5rem;
+        padding: 10%;
+    }
+</style>
+
+</body>
+</html>

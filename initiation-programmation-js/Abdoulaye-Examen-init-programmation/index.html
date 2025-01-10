@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdoulaye-Examen 1ère Session</title>
+</head>
+<body>
+
+    <script>
+        // Q1 . Rédigez le pseudo-code 
+        // ENONCE : 
+
+        // Mémorise la réponse de l'utilisateur auquel tu demandes combiens de temps il passe chaque jour à faire de l'exercise physique, avec le message : Combien de minutes d'exercise physique fais-tu par jour ?
+
+        // Si le nombre de minute est plus grand que 60, écris danas la page le message: Vous faites beaucoup d'exercice, c'est excellent.
+
+        // Si le nombre de minute est entre 30 et 60, écris dans la page le message : Votre niveau d'activité physique est adéquat.
+
+        // Si le nombre de minute est plus petit que 30, écris dans la page le message : Vous devriez faire plus d'activités physiques.
+
+        // Q1 . PSEUDO-CODE :
+                // Demande à l'utilisateur : "Combien de minutes d'exercice physique fais-tu par jour ?"
+                // Mets la réponse dans la boîte : tempsExercice
+                // Convertis la boîte en nombre
+
+                // Si tempsExercice est plus grand que 60
+                    // Écris dans le body : "Vous faites beaucoup d'exercice, c'est excellent."
+                // Sinon si tempsExercice est entre 30 et 60
+                    // Écris dans le body : "Votre niveau d'activité physique est adéquat."
+                // Sinon
+                    // Écris dans le body : "Vous devriez faire plus d'activités physiques."
+
+
+        // Q2 . Rédigez le pseudo-code
+        // ENONCE :
+
+        // Mémorise la réponse de l'utilisateur auquel tu demandes son nombre d'années d'expérinece professionnelle, avec le message : Depuis combien d'anneés travaillez-vous ?
+
+        // Affiche, automatiquement sur la page, la liste des nombres depuis le nombres d'années de travail de l'utilisateur jusqu'à 0(inclus), en faisant un rétour à la ligne après chaque nombre
+
+        // Q2 . PSEUDO-CODE :
+                // Demande à l'utilisateur : "Depuis combien d'années travaillez-vous ?"
+                // Mets la réponse dans la boîte : anneesTravail
+                // Convertis la boîte en nombre
+
+                // Répète,
+                // pour un compteur i initialisé à anneesTravail
+                // tant que le compteur i est supérieur ou égal à 0
+                // en décrémentant le compteur i
+                    // Écris dans le body : i
+                    // Fais un retour à la ligne avec la balise "<br>"
+
+
+        // Q3. Codez le JavaScript
+
+        // ENONCE :
+        // Stocke la liste de ces villes dans l'ordre suivant :
+                    // Paris 
+                    // New York 
+                    // Bruxelles
+
+        // Demande à l'utilisateur quelle est sa ville préférée (autres que celles déjà listées)
+        // Ajoute sa ville préférée à la fin de la liste et écris la liste des villes de manières ordonnée(de la première à la dernière), en faisant un retour à la ligne après chaque ville 
+
+        // Q3 . javascript code ENONCE :
+            const villes = [
+                "Paris",
+                "New York",
+                "Bruxelles"
+            ]
+
+            let villesPrefere = window.prompt("quel est ta ville préférée autres que \"Paris\" \"New York\" \"Bruxelles\" ")
+
+            villes.push(villesPrefere)
+            for (let i = 0; i < villes.length; i++) {
+            document.write((i + 1) + " . " + villes[i] + "<br>");
+            }
+
+           /* if (villesPrefere) {
+                villes.push(villesPrefere)
+                document.write(villes[3])
+            } else {
+                console.log(villesPrefere)
+            }
+
+
+            document.write(villes[3] + "<br>")  */ // test Line 
+
+
+        // ALGORITHME :
+        // 1 . Créer une liste des villes :
+            //Stocker "Paris", "New York", et "Bruxelles" dans un tableau
+        // 2. Demander à l'utilisateur sa ville préférée :
+            // Utiliser un prompt pour obtenir une réponse(autres que celles déjà listées).
+        // 3. Ajouter la ville préférée à la fin de la liste :
+            // Utiliser une méthode pour insérer cet élément à la fin du tableau.
+        // 4. Afficher la liste sur la page Web :
+            // Parcourir le tableau et afficher chaque ville sur une nouvelle ligne.
+
+        
+        // Q4 . Codez le javascript 
+
+        // ENONCE : 
+        // Stocke la liste de ces plats dans l'ordre suivant :
+                // Pizza Margherita
+                // Poulet au curry
+                // Lasagnes
+                // Sushi au saumon
+                // Salade César
+                // Burger Classique
+
+        // Demande à l'utilisateur s'il a déjà réussi à cuisiner des lasagnes
+
+        // S'il a réussi, remplace le plat stocké intitulé "Lasagnes" par "Lasagnes - Plat maîtrisé" et écris sur la page la liste modifiée des plats, de manière automatique et ordonnée (du premier au dernier), en faisant un retour à la ligne après chaque plat
+
+        // S'il n'a pas réussi, écris sur la page la liste des plats, de manière automatique et ordonnée (du premier au dernier), en faisant un retour à la ligne après chaque plat, en mettant automatiquement en gras le plat intitulé "Lasagnes"
+
+        // Q4 . javascript code ENONCE :
+            const plats = [
+                "Pizza Margherita",
+                "Poulet au curry",
+                "Lasagnes",
+                "Sushi au saumon",
+                "Salade César",
+                "Burger Classique"
+            ]
+
+            let cuisineLasagnes = window.prompt("As-tu déjà réussi à cuisier des lasagnes ?")
+
+            if (cuisineLasagnes === "oui") {
+                plats[2] = "Lasagnes - Plat maîtrisé"
+
+                for (let i = 0; i <plats.length; i ++ ) {
+                    document.write((i + 1) + " . " + plats[i] + "<br>")
+                }
+            } else {
+                for( let i = 0; i <plats.length; i++) {
+                    if (plats[i] === plats[2]) {
+                        document.write((i + 1) + " . " + "<strong>" + plats[i] + "</strong>" + "<br>")
+                    } else if (plats[i] != plats[i]) {
+                        document.write((i + 1) + " . " + plats[i] + "<br>")
+                    } else {
+                        console.log(plats[i])
+                    }  
+                }
+            }
+            /* plats[2] = "Lasagnes - Plat maîtrisé"
+             document.write(plats[2]) */ // test ligne
+
+        // ALGORITHME :
+        
+        // 1 . Créer une liste des plats :
+            // Stocker "Pizza Margherita", "Poulet au curry", "Lasagnes", "Sushi au saumon", "Salade César", "Burger classique" dans un tableau.
+        // 2 . Demander à l'utilisateur s'il a déjà réussi à cuisiner des lasagnes :
+            // Utiliser un prompt pour obtenir une réponse "oui" ou "non"
+        // 3. Vérifier la réponse de l'utilisateur :
+            // a. Si "oui", remplacer "Lasagnes" par "Lsagnes - Plat maîtrisé".
+            // b . Si "non", mettre "Lasagnes" en gras dans le tableau 
+        // 4. Afficher la liste sur la page web :
+            // Parcourir le tableau et afficher chaque plat sur une nouvellle ligne.
+
+
+        const groceries = [
+            "banane",
+            "coucou",
+            "apple",
+            "peanuts"
+        ]
+
+        if(groceries.indexOf("apple")) {
+            document.write("On a trouvé le pomme")
+        } else {
+            document.write("désolé m8 re verifie ton syntax")
+        }
+
+    </script>
+    
+</body>
+</html>

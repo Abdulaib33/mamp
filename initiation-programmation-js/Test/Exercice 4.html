@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calcul simple</title>
+</head>
+<body>
+    
+    <script>
+            // Demande à l'utilisateur d'entrer un nombre.
+            // Ajoute 5 à ce nombre et affiche le résultat dans la page.
+            // Indique le type de la variable du résultat avec typeof.
+
+
+        let response = window.prompt("Entre Un Nombre")
+        // response =+ 5 ignore cette stupidité ou d'inattention si tu prefere
+        // typeof(response) c'est ne pas correct ne te laisse pas scam par l'enoncé
+        response = Number(response)
+        document.write(response + 5 + "<br>")
+        document.write(typeof(response))
+        
+
+    </script>
+
+    <style>
+        body {
+            background-color: aqua;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-size: 1.5rem;
+            padding: 10%;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 3</title>
+</head>
+<body>
+    <script>
+        // ENONCE
+        // -----------------------------------------
+        // Avertis l'utilisateur qu'il y a un monstre dans l'école
+        // Demande-lui s'il veut faire appel à un super-héro
+        // Demande-lui quel super-héro il souhaite appeler
+        // Avertis l'utilisateur qu'il a appelé le super-héro XXX
+        // Ecris dans la page un message rassurant avec le nom du super-héro qu'il a choisi
+        // -----------------------------------------
+
+        // PSEUDO-CODE
+        // -----------------------------------------
+        // Lance une fenêtre d'alerte avec comme message : "Attention, il y a un monstre dans l'école."
+        // Demande à l'utilisateur de confirmer : "Veux-tu faire appel à un super-héros ?"
+        // Crée la boite superHero
+        // Demande à l'utilisateur de répondre au message : "Quel super-héros veux-tu ?" et met la réponse dans la boite superHero
+        // Lance une fenêtre d'alerte avec comme message la concaténation : "Tu as appelé : "+superHero+"."
+        // Ecris dans le body la concaténation : "Tiens bon, "+superHero+" arrive pour te sauver."
+
+        window.alert("Attention, il y a un monstre dans l'école.");
+        window.confirm("Veux-tu faire appel à un super-héros ?");
+        const superHero=window.prompt("Quel super-héros veux-tu ?");
+        window.alert("Tu as appelé : "+superHero+".");
+        document.write("Tiens bon, "+superHero+" arrive pour te sauver.");
+    </script>
+</body>
+</html>
+
+
+
+
+

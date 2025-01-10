@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>film prefere</title>
+</head>
+<body>
+    
+    <script>
+
+        // ENONCE 
+        // ------------------------------------------------
+        // Demande à l'utilisateur son film préféré
+        // Si l'utilisateur réfuse de repondre, écris un message sur la page
+        // S'il répond, écris le titre du film sur la page  
+        // ------------------------------------------------
+
+        let filmPrefere = window.prompt("Quel est ton film préféré ?");
+
+        if (filmPrefere === null) {
+            document.write("Dommage, tu n'as pas voulu me dire ton film préféré");
+        } else {
+            document.write("Ton film préféré est " + filmPrefere);
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+====== Créativité ======
+
+  *[[:jeux:duplik|Duplik]]
+
+===== Chez Philibert =====
+
+  *[[:jeux:start|Tous les jeux]]
+  *[[:thematiques:start|Toutes les thématiques]]
+  *[[:editeurs:start|Tous les éditeurs]]
+
+----
+
+[[:start|RETOUR A L'ACCUEIL]]

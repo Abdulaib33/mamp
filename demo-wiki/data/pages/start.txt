@@ -1,0 +1,28 @@
+====== Mon Titre ======
+
+opiauoiruzaoieruiozeuroizuriouzepiruazioeuroiazeuriozaeuriuzaenpoizeuiruiozepfnzoieroiuazeoiurazie
+
+opauzeiruaizoeuriozpueirozenfkjhdzaoipuoiruoizeurioauzeoiruazoiepuraoizeuroiaueroiapzueoriuazeoprpoiu
+
+ligne 1 : arozieuroiazuroiu \\ ligne 2 : oapiuroizapuerioazueriouazeiorpu
+
+   * puce
+   * puce2
+   * puce3
+   * puce4
+
+> 1+1 = 3. Jean-Claude Vandamme
+
+----
+ ioazeurpiozuarpoiuazioeruziaoperuioazepr
+----
+
+Note de bas de page ((coucou note))
+
+[[http://promotion-sociale.be]] \\
+[[http://promotion-sociale.be | site du campus]] \\
+[[page-2| Lien vers la page 2]]\\
+
+[[jeux-video:start | lien vers les jeux video]]
+
+[[jeux-societer:start | jeux de société ]]

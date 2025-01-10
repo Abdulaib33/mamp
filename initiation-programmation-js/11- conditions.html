@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions</title>
+</head>
+<body>
+
+    <script>
+
+        /*
+
+        if (condtion)  {
+            instruction si là condition est respectée
+            instruction si là condtion est vraie
+        } 
+        else {
+            instruction si là condition n'est pas respectée
+            instruction si là condtion est fausses
+        }
+
+        */
+
+        const reponse = window.confirm("Aimes-tu le JavaScript ?");
+        // //document.write(reponse);
+        if (reponse === true) {
+             document.write(" Tu aimes le JavaScript ! et ça c'est cool !");
+        } else {
+             document.write("Tu n'aimes pas le JavaScript ! et ça c'est pas cool !");
+        }
+
+        document.write("<br>");
+        
+        const responsive = window.prompt("Qu'as-tu mangé ce midi");
+
+        if (responsive === null) {
+            document.write("Excuse-moi de te demander ce que tu as mangé ce midi")
+        } else {
+            if (responsive ==="") {
+                document.write("Tu a oublié de répondre ! ")
+            }
+            else {
+                document.write("")
+            }
+        }
+        document.write(responsive);
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choix de Pouvoir</title>
+</head>
+<body>
+    <h1>Choisissez votre Pouvoir!</h1>
+    <p id="message">Appuyez sur le bouton pour commencer.</p>
+    <button onclick="choisirPouvoir()">Choisir un Pouvoir</button>
+
+    <script>
+        function choisirPouvoir() {
+            // Affiche un message d'accueil
+            alert("Bienvenue ! Choisissez un pouvoir spécial pour votre personnage.");
+
+            // Demande à l'utilisateur de choisir un pouvoir parmi quelques options
+            let pouvoir = prompt("Entrez le pouvoir de votre choix : feu, eau, vent, ou terre").toLowerCase();
+
+            // Message de résultat
+            let message;
+
+            // Conditions pour vérifier le pouvoir choisi
+            if (pouvoir === "feu") {
+                message = "Vous avez choisi le pouvoir du Feu! Vous pouvez enflammer vos ennemis.";
+            } else if (pouvoir === "eau") {
+                message = "Vous avez choisi le pouvoir de l'Eau! Vous pouvez apaiser les flammes et soigner les blessures.";
+            } else if (pouvoir === "vent") {
+                message = "Vous avez choisi le pouvoir du Vent! Vous pouvez créer des tornades et vous déplacer rapidement.";
+            } else if (pouvoir === "terre") {
+                message = "Vous avez choisi le pouvoir de la Terre! Vous pouvez soulever des rochers et créer des murs de protection.";
+            } else {
+                message = "Pouvoir inconnu! Veuillez choisir entre feu, eau, vent ou terre.";
+            }
+
+            // Affiche le message dans l'élément <p> du document
+            document.getElementById("message").innerText = message;
+        }
+    </script>
+</body>
+</html>

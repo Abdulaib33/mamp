@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>artilces</title>
+</head>
+<body>
+
+    <button type="button"  onclick="hehehhe()">Clique moi</button>
+    <p> je compte combien des vois ta cliqué : <a href="" id="clicks">0</a></p>
+
+    <script>
+
+        var cliqué = 0
+         function hehehhe() {
+            cliqué += 1;
+            document.getElementById("clicks").textContent = cliqué
+
+        }
+
+        // PSEUDO-CODE
+        // Lance une alerte avec comme message : "nous faison un sondage sur tes 3 artistes préférés."
+        // Crée une boite : artistePrefere1
+        // Demande à l'utilisateur de répondre au message "Quel est ton premier artiste préféré ?"  et met la réponse dans la boite artistePrefere1
+         // Crée une boite : artistePrefere2
+        // Demande à l'utilisateur de répondre au message "Quel est ton premier artiste préféré ?"  et met la réponse dans la boite artistePrefere2
+         // Crée une boite : artistePrefere3
+        // Demande à l'utilisateur de répondre au message "Quel est ton premier artiste préféré ?"  et met la réponse dans la boite artistePrefere3
+        // Demande à l'utilisateur de confirmer la concaténation : "Voici tes trois films préférés : " + "artisteprefere1" + "artisteprefere2" + "artisteprefere3". valide tes choix
+        // Crée la boite : artisteFavori
+        // Demande àà l'utilisateur de répondre à la concaténation : "Parmis tes trois artistes préférés, quelle est ton favori  ? pour rappel, voici les trois artistes que tu as renseingés précédement : "artistePrefere1", "artistePrefer2+" et "artistePrefer3 et met la réponse dans la boite : artisteFavori"  " 
+        // Ecris dans le body concaténation : "<h1> "artisteFavori" est un très bon choix </h1>"
+
+        window.alert("nous faison un sondage sur tes 3 artistes préférés.")
+        const artisePrefere1 = window.prompt("Quel est ton premier artiste préféré ?")
+        const artisePrefere2 = window.prompt("Quel est ton premier artiste préféré ?")
+        const artisePrefere3 = window.prompt("Quel est ton premier artiste préféré ?")
+
+        window.confirm("Voici test trois artiste préféres :"  + artisePrefere1 + artisePrefere2  + "et" + artisePrefere3)
+     
+
+
+        `     // PSEUDO-CODE
+      // -----------------------------------------
+      // Lance une fenêtre d'alerte pour informer l'utilisateur que l'on réalise un sondage sur ses trois artistes préférés.
+      // Créer une boite : favoriteArtist1
+      // Demande à l'utilisateur de répondre au message "Quel est ton premier artiste préféré ?" et stocke la réponse dans la boite : favoriteArtist1
+      // Créer une boite : favoriteArtist2
+      // Demande à l'utilisateur de répondre au message "Quel est ton deuxième artiste préféré ?" et stocke la réponse dans la boite : favoriteArtist2
+      // Créer une boite : favoriteArtist3
+      // Demande à l'utilisateur de répondre au message "Quel est ton troisième artiste préféré ?" et stocke la réponse dans la boite : favoriteArtist3
+      // Demande à l'utilisateur de valider la concaténation des trois artistes préférés "Tes artistes préférés sont : " + favoriteArtist1 + ", " + favoriteArtist2 + " et " + favoriteArtist3 + " est-ce correct ?"
+      // Créer une boite : favoriteArtist
+      // Demande à l'utilisateur de répondre à la concaténation "Quel est ton artiste favoris parmis les trois que tu as cité : " + favoriteArtist1 + ", " + favoriteArtist2 + " et " + favoriteArtist3 + " ?" et stock la réponse dans la boite : favoriteArtist
+      // Test avec une condition la réponse de l'utilisateur dans la boite : favoriteArtist si elle est bien égale à une des boites favoriteArtist1 ou favoriteArtist2 ou favoriteArtist3
+      // Si favoriteArtist est bien égal à une des boites, écris dans le body la concatenation en titre de niveau 1 "<h1>Ton artiste favoris est " + favoriteArtist + " et c'est un très bon choix.</h1>" sinon écris la concaténation toujours en titre de niveau 1 "<h1>Je suis désolé, mais tu n'as pas choisi un de tes artistes préférés.</h1>".`
+
+      `// CODE
+      // -----------------------------------------
+      window.alert(
+        "Nous réalisons un sondage sur tes trois artistes préférés."
+      );
+      let favoriteArtist1 = prompt("Quel est ton premier artiste préféré ?");
+      let favoriteArtist2 = prompt("Quel est ton deuxième artiste préféré ?");
+      let favoriteArtist3 = prompt("Quel est ton troisième artiste préféré ?");
+      let favoriteArtists = confirm(
+
+        Tes artistes préférés sont : ${favoriteArtist1}, ${favoriteArtist2} et ${favoriteArtist3} est-ce correct ?`
+      let favoriteArtist = prompt(
+        `Quel est ton artiste favoris parmis les trois que tu as cité : ${favoriteArtist1}, ${favoriteArtist2} et ${favoriteArtist3} ?`
+      );
+      if (
+        favoriteArtist1 === favoriteArtist ||
+        favoriteArtist2 === favoriteArtist ||
+        favoriteArtist3 === favoriteArtist
+      ) {
+        document.write(
+          "<h1>Ton artiste favoris est " +
+            favoriteArtist +
+            " et c'est un très bon choix.</h1>"
+        );
+      } else {
+        document.write(
+          "<h1>Je suis désolé, mais tu n'as pas choisi un de tes artistes préférés.</h1>"
+        );
+      }
+  
+    </script>
+
+    <style> 
+        body {
+            background-color: aqua;
+        }
+    </style>
+    
+</body>
+</html>

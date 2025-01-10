@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sondage 3 films préférés</title>
+</head>
+<body>
+    <script>
+        // ENONCE
+        // Avertis l'utilisateur que l'on fait un sondage sur les films d'animation
+        // Demande les 3 films d'animation préférés de l'utilisateur
+        // Affiche une fenêtre avec ses 3 films préférés et demande de lui de valider 
+        // Ecris les 3 films sur la page, sous la forme d'une liste à puce
+        // -------------------------------------------
+
+        // PSEUDO CODE
+        // -----------------------------------
+        // Lance une fenêtre d'alerte avec comme message : "Nous faisons un sondage sur les films d'animation."
+        // Crée la boite : filmPrefere1
+        // Demande à l'utilisateur de répondre au message : "Quel est ton premier film d'animation préféré ?" et mets la réponse dans la boite : filmPrefere1
+        // Crée la boite : filmPrefere2
+        // Demande à l'utilisateur de répondre au message : "Quel est ton second film d'animation préféré ?" et mets la réponse dans la boite : filmPrefere2
+        // Crée la boite : filmPrefere3
+        // Demande à l'utilisateur de répondre au message : "Quel est ton troisième film d'animation préféré ?" et mets la réponse dans la boite : filmPrefere3
+        // Demande à l'utilisateur de confirmer la concaténation : "Tes trois films préférés sont : "+filmPrefere1+", "+filmPrefere2+", "+filmPrefere3+"."
+        // Ecris dans le body "<ul>"
+        // Ecris dans le body la concaténation "<li>"+filmPrefere1+"</li>"
+        // Ecris dans le body la concaténation "<li>"+filmPrefere2+"</li>"
+        // Ecris dans le body la concaténation "<li>"+filmPrefere3+"</li>"
+        // Ecris dans le body "</ul>"
+
+        window.alert("Nous faisons un sondage sur les films d'animation.");
+        const filmPrefere1=window.prompt("Quel est ton premier film d'animation préféré ?");
+        const filmPrefere2=window.prompt("Quel est ton second film d'animation préféré ?");
+        const filmPrefere3=window.prompt("Quel est ton troisième film d'animation préféré ?");
+        window.confirm("Tes trois films préférés sont : "+filmPrefere1+", "+filmPrefere2+", "+filmPrefere3+".");
+        document.write("<ul>");
+        document.write("<li>"+filmPrefere1+"</li>");
+        document.write("<li>"+filmPrefere2+"</li>");
+        document.write("<li>"+filmPrefere3+"</li>");
+        document.write("</ul>");
+    </script>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,13 @@
+a:2:{s:7:"current";a:9:{s:4:"date";a:2:{s:7:"created";i:1569859495;s:8:"modified";i:1570079976;}s:4:"user";s:0:"";s:7:"creator";s:0:"";s:11:"last_change";b:0;s:11:"contributor";a:1:{s:4:"test";s:4:"test";}s:5:"title";s:14:"Chez Philibert";s:11:"description";a:2:{s:15:"tableofcontents";a:3:{i:0;a:4:{s:3:"hid";s:14:"chez_philibert";s:5:"title";s:14:"Chez Philibert";s:4:"type";s:2:"ul";s:5:"level";i:1;}i:1;a:4:{s:3:"hid";s:14:"notre_boutique";s:5:"title";s:14:"Notre boutique";s:4:"type";s:2:"ul";s:5:"level";i:2;}i:2;a:4:{s:3:"hid";s:9:"philibert";s:5:"title";s:9:"Philibert";s:4:"type";s:2:"ul";s:5:"level";i:2;}}s:8:"abstract";s:475:"Chez Philibert
+
+Bienvenue dans la boutique Philibert, votre spécialiste en jeux !
+
+Notre boutique
+
+	* Liste des jeux de notre boutique
+	* Parcourez nos différentes thématiques
+	* Découvrez nos éditeurs préférés
+
+
+
+Découvrez notre large choix dans nos différents univers, jeux de société, jeux de rôle, jeux de cartes, jeux classiques, jeux de guerre ou jeux solo ! Profitez de nos offres promotionnelles, ventes flash et pré-commandes tout au long de l'année !";}s:8:"relation";a:3:{s:10:"references";a:3:{s:10:"jeux:start";b:1;s:17:"thematiques:start";b:1;s:14:"editeurs:start";b:1;}s:5:"media";a:1:{s:12:"boutique.jpg";b:1;}s:10:"firstimage";s:12:"boutique.jpg";}s:8:"internal";a:2:{s:5:"cache";b:1;s:3:"toc";b:1;}}s:10:"persistent";a:5:{s:4:"date";a:2:{s:7:"created";i:1569859495;s:8:"modified";i:1570079976;}s:4:"user";s:0:"";s:7:"creator";s:0:"";s:11:"last_change";b:0;s:11:"contributor";a:1:{s:4:"test";s:4:"test";}}}

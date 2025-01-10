@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recettes de cuisine</title>
+</head>
+<body>
+    <script>
+        // ENONCE
+        // ------------------------------------------------
+        // Demande à l'utilisateur combien de recettes de cuisine il sait préparer
+        // Demander à l'utilisateur de saisir le nom de chaque recette une à une
+        // Félicite l'utilisateur pour chaque recette saisie sous la forme d'une fenêtre surgissante puis affiche sur la page les recettes qu'il a renseignées en les numérotant
+        // Attention : vérifie si l'utilisateur possède des ustensiles de cuisine
+        //   - S'il ne possède pas d'ustensile, propose-lui de s'inscrire à un cours de cuisine
+        //   - S'il ne sait pas préparer de recette mais possède des ustensiles, propose-lui de chercher des recettes en ligne
+        // S'il refuse de s'inscrire à un cours de cuisine, écris dans la page que la cuisine peut être une activité amusante
+        // S'il est d'accord, demande-lui s'il veut suivre un cours de cuisine en ligne ou en présentiel
+        // S'il répond par l'affirmative, écris dans la page les détails du cours en ligne avec un coût de 49€ / an
+        // S'il ne souhaite pas suivre de cours, écris dans la page les coordonnées d'une école de cuisine avec un coût de 199€ / an
+
+        const ustensiles=window.confirm("As-tu des ustensiles pour cuisiner ?");
+        if(ustensiles===true) {
+            const nbRecettes=Number(window.prompt("Combien de recettes sais-tu préparer ?"));
+            if(nbRecettes===0) {
+                window.alert("Je te propose de chercher des recettes en ligne, par exemple sur Marmiton.");
+            }
+            else {
+                for(let i=1;i<=nbRecettes;i++) {
+                    let nomRecette=window.prompt("Donne-moi le nom de la recette n°"+i);
+                    window.alert("Fécilitations, tu sais cuiciner "+nomRecette);
+                    document.write(i+". "+nomRecette+"<br>");
+                }
+            }     
+        }
+        else {
+            const coursCuisine=window.confirm("Veux-tu t'inscrire à des cours de cuisine ?");
+            if(coursCuisine===true) {
+                const coursEnLigne=window.confirm("Souhaites-tu des cours en ligne ?");
+                if(coursEnLigne===true) {
+                    document.write("J'ai trouvé un cours en ligne à 49€/an.");
+                }
+                else {
+                    document.write("Ecole de cuisine, EAFC Fléron, rue Charles Deliège 9, 4623 Fléron. Coût : 199€/an.");
+                }
+            }
+            else {
+                document.write("La cuisine peut être une activité amusante.");
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+

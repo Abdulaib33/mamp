@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau</title>
+</head>
+<body>
+
+    <script>
+
+        const mesCours = []
+        mesCours[0] = "Environnement"
+        mesCours[1] = "App Statiques"
+        mesCours[2] = "Initiations programmation"
+        mesCours[3] = "Anglais"
+
+        document.write(mesCours[1] + "<br>")
+
+
+        const testCours = [
+            "DesignUI",
+            "Environnement",
+            "App Statiques",
+            "Initiation programmation",
+            "Anglais",
+            "coucou"
+        ];
+
+        
+        testCours.unshift() // Ajoute toujours au premier
+        testCours.push() // Ajoute toujour au dernier 
+        testCours.shift() // supprime toujour le premier
+        testCours.pop() // supprime toujour le dernier
+        
+        document.write(testCours[3] + "<br>");
+    
+
+         for (let i = 0; i < testCours.length; i++) {
+            document.write(i + "<br>")
+            // document.write(testCours[i]);
+         }
+         
+    </script>
+    
+</body>
+</html>

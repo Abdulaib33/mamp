@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TVAC ou HTVA</title>
+</head>
+<body>
+    <script>
+        // ENONCE
+        // ------------------------------------------------
+        // Demande le sexe de l'utilisateur
+        // S'il ne répond pas, écris sur la page "Bonjour"
+        // Si c'est un homme, écris sur la page un message de "Bonjour Monsieur"
+        // Si c'est une femme, demande-lui si elle est mariée
+        // Si elle l'est, ecris sur la page "Bonjour Madame"
+        // Si elle n'est pas mariée, écris sur la page "Monjour Mademoiselle"
+        // ------------------------------------------------
+
+        // PSEUDO-CODE
+        // Crée une boite : sexe
+        // Demande à l'utilisateur de répondre au message "Es-tu un homme ou une femme (H/F) ?" et met la réponse dans la boite sexe
+        // Si sexe===null alors ...
+            // Ecris dans le body "Bonjour."
+        // Sinon si sexe==="" alors ...
+            // Ecris dans le body "Bonjour."
+        // Sinon si sexe==="H"
+            // Ecris dans le body "Bonjour monsieur."
+        // Sinon ...
+            // Crée une boite mariee
+            // Demande à l'utilisateur de confirmer le message "Es-tu mariée ?" et mets la réponse dans la boite mariee
+            // Si mariee===true alors ...
+                // Ecris dans le body "Bonjour madame."
+            // Sinon ...
+                // Ecris dans le body "Bonjour mademoiselle."
+
+        const sexe=window.prompt("Es-tu un homme ou une femme (H/F) ?");
+        if(sexe===null) {
+            document.write("Bonjour.");
+        }
+        else if(sexe==="") {
+            document.write("Bonjour.");
+        }
+        else if(sexe==="H") {
+            document.write("Bonjour monsieur.");
+        }
+        else {
+            const mariee=window.confirm("Es-tu mariée ?");
+            if(mariee===true) {
+                document.write("Bonjour madame.");
+            }
+            else {
+                document.write("Bonjour mademoiselle.");
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+

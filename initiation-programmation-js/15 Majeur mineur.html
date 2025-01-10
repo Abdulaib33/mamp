@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majeur et mineur</title>
+</head>
+<body>
+
+
+
+    <script>
+
+        // ENONCE
+        // -------------------------------------
+        // Demande le prénom de l'utilisateur
+        // Demande son nom 
+        // Demande son âge 
+        // S'il est majeur, éris dans la page son nom, prénom, son âge, qu'il est mejeur et change le titre de la page en "Vive là majorité"
+        // S'il est mineur, écris dna la page son nom, prénom, son âge, qu'il est mineur et change le titre de la page en "Encre un peu de patience"
+
+        // PSEUDO-CODE
+      // -----------------------------------------
+      //Créer une boite : firstName
+      //Créer une boite : lastName
+      //Créer une boite : age
+      // Demander à l'utilisateur son prénom et le stocker dans la boite firstName
+      // Demander à l'utilisateur son nom et le stocker dans la boite lastName
+      // Demander à l'utilisateur son âge et le stocker dans la boite age
+      // Test avec une condition :
+      // Si son âge est supérieur ou égal à 18, écris dans le body "Bonjour " + firstName + " " + lastName + ", vous avez " + age + " ans. Vous êtes majeur." et change le titre de la page en "Vive la majorité"
+      // Sinon, écris dans le body "Bonjour " + firstName + " " + lastName + ", vous avez " + age + " ans. Vous êtes mineur." et change le titre de la page en "Encore un peu de patience."
+
+        let prénom = window.prompt("quel est ton prénom")
+        let nom = window.prompt("quel est ton nom")
+        let age = Number(window.prompt("quel est ton age"))
+        if (age => 18) {
+            document.write(nom + prénom + "<br>" + "félicitation tu est fieux")
+            document.title = "Vive là majorité"
+        } else {
+            document.write(nom + prénom + "<br>" + "Va Dormir Gros Bébé")
+            document.title = "Il te faudra plus que de là patience"
+        }
+
+
+    </script>
+
+    
+</body>
+</html>

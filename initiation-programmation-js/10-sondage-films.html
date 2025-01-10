@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sondage Films</title>
+</head>
+<body>
+    
+    <script>
+
+        // ENONCE
+        // Avertis l'utilisateur que l'on fait un sondage sur les films d'animation
+        window.alert("Bonjour, nous faisons un sondage sur les films d'animation");
+        // Demande les 3 films d'animation préférés de l'utilisateur
+        let film1 = window.prompt("Quel est votre film d'animation préféré ?");
+        let film2 = window.prompt("Quel est votre 2ème film d'animation préféré ?");
+        let film3 = window.prompt("Quel est votre 3ème film d'animation préféré ?");
+        // Affiche une fenêtre avec ses 3 films préférés et demande lui de validé
+        window.confirm("Vous avez choisi " + film1 + ", " + film2 + " et " + film3 + " comme films préférés");
+        // Ecris les 3 films sur la page, sous la forme d'une liste à puce
+        document.write("<ul>");
+        document.write("<li>" + film1 + "</li>");
+        document.write("<li>" + film2 + "</li>");
+        document.write("<li>" + film3 + "</li>");
+        document.write("</ul>");
+
+        document.write("<ul>" + "<li>" + film1 + "</li>" + "<li>" + film2 + "</li>" + "<li>" + film3 + "</li>" + "</ul>");
+
+
+        // PSEUDO-CODE
+        // ------------------------------------------------
+        // Lance une fenêtre avec comme message "Bonjour, nous faisons un sondage sur les films d'animation"
+        // Demande à l'utilisateur de repondre à la question "Quel est votre film d'animation préféré ?"
+        // Met là reponse dans le variable film1
+        // Demande à l'utilisateur de repondre à la question "Quel est votre 2ème film d'animation préféré ?"
+        // Met là reponse dans le variable film2
+        // Demande à l'utilisateur de repondre à la question "Quel est votre 3ème film d'animation préféré ?"
+        // Met là reponse dans le variable film3
+        // Demande à l'utilisateur de confirmer ses 3 films préférés choisis
+        // 
+    
+
+    </script>
+
+
+    <style>
+        body {
+            background-color: aqua;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-size: 1.5rem;
+            padding: 10%;
+        }
+    
+    </style>
+
+</body>
+</html>

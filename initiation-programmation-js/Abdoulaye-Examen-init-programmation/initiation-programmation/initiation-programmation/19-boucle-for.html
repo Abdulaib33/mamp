@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boule for</title>
+</head>
+<body>
+    <script>
+        // La boucle for permet d'écrire des boucles dont la condition est basée sur une variable qui est modifiée dans le corps de la boucle.
+
+        //for(initialisation;condition;étape) {
+            // les instructions qui doivent être répétées !
+        //}
+
+        /*
+        L'initialisation se produit une seule fois, au début de l'exécution.
+
+        La condition est évaluée AVANT chaque tour de boucle. Si elle est respectée, un nouveau tour de boucle est effectué. Sinon, la boucle est terminée.
+
+        L'étape  est réalisée APRES chaque tour de boucle.
+        */
+
+        // for(let compteur=1;compteur<=20;compteur++) {
+        //     document.write(compteur+" ");
+        // }
+
+        // 1. faire une boucle qui affiche 30 fois "lorem ipsum" en les numérotant
+        // for(let compteur=1;compteur<=30;compteur++) {
+        //     document.write(compteur+" lorem ipsum");
+        // }
+
+        // 2. faire une boucle qui affiche tous les multiples de 2 jusqu'à 100
+        // for(let i=2;i<=100;i+=2) {
+        //     document.write(i+" ");
+        // }
+
+        // 3. faire une boucle qui affiche un décompte de 3 à 1 
+        // puis donner le départ de la course en écrivant "partez !" sur la page
+        for(let i=3;i>=1;i--) {
+            document.write(i+" ");
+            if(i===1) {
+                document.write("partez !");
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets concert</title>
+</head>
+<body>
+    <script>
+        // ENONCE
+        // ------------------------------------------------
+        // Demande à l'utilisateur le nombre total de billets qu'il a pour aller au concert de Coldplay
+        // Demander à l'utilisateur de saisir le prix de chaque billet un à un
+        // Demande à l'utilisateur s'il dispose d'un code promotionnel
+        // S'il en possède un, applique une réduction de 10% sur le coût total des billets
+        // Affiche dans la page le coût total avec un message du type "Le coût total de vos billets est de X.XX euros"
+        // ------------------------------------------------
+
+        // PSEUDO-CODE
+        // Demande à l'utilisateur de répondre au message "Combien de tickets as-tu pour le concert de Coldplay ?" et mets la réponse dans la boite nombreTickets
+        // Convertis nombreTickets en Number
+        // Crée une boite coutTotal et mets 0 dans la boite
+        // Répète ...
+            // pour un compteur i initialisé à 1
+            // tant que i<=nombreTickets
+            // en incrémentant le compteur i
+        // les instructions suivantes :
+            // Demande à l'utilisateur de répondre à la concaténation "Quel est le prix du ticket n°"+i et mets la reponse dans la boite prixTicket
+            // Convertis prixTicket en Number
+            // Fais le calcul coutTotal += prixTicket
+        // Demande à l'utilisateur de confirmer le message "As-tu un code promo ?" et mets la réponse dans la boite codePromo
+        // Si codepromo===true alors ...
+            // fais le calcul : coutTotal*=0.9
+        // Sinon ...
+            // lance une fenêtre d'alerte avec comme message "Dommage, tu paieras le prix plein."
+        // Ecris dans le body la concaténation "Le coût total de vos tickets est de : "+coutTotal
+
+        let nombreTickets=window.prompt("Combien de tickets as-tu pour le concert de Coldplay ?");
+        nombreTickets=Number(nombreTickets);
+        let coutTotal=0;
+        for(let i=1;i<=nombreTickets;i++) {
+            let prixTicket=window.prompt("Quel est le prix du ticket n°"+i);
+            prixTicket=Number(prixTicket);
+            coutTotal += prixTicket;
+        }
+        const codePromo=window.confirm("As-tu un code promo ?");
+        if(codePromo===true) {
+            coutTotal*=0.9;
+        }
+        else {
+            window.alert("Dommage, tu paieras le prix plein.");
+        }
+        document.write("Le coût total de vos tickets est de : "+coutTotal);
+    </script>
+</body>
+</html>
+
+
+
+
+

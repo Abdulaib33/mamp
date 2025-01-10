@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadeaux de Saint-Nicolas</title>
+</head>
+<body>
+    <script>
+        // ENONCE
+        // ------------------------------------------------
+        // Demande combien de jouets maman est d'accord d'offrir pour St-Nicolas
+        // demande combien de jouets papa est d'accord d'offrir
+        // comme on veut la paix dans le couple, St-Nicolas offrira un nombre de jouets égal à la moyenne des choix des parents
+        // ecris dans la page le nombre de jouets offerts par St-Nicolas en les numérotant (avec au moins un jouet). On écrit donc "Jouet n°x" autant de fois que necessaire
+        // ------------------------------------------------
+
+        const nbJouetsMaman=Number(window.prompt("Combien de jouets maman est-elle d'accord d'offrir ?"));
+        const nbJouetsPapa=Number(window.prompt("Combien de jouets papa est-il d'accord d'offrir ?"));
+        const nbCadeauxStNicolas=(nbJouetsMaman+nbJouetsPapa)/2;
+        for(let i=1;i<=nbCadeauxStNicolas;i++) {
+            document.write("Jouet n°"+i+"<br>");
+        }
+
+    </script>
+</body>
+</html>
+
+
+
+
+

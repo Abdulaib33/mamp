@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devoirs</title>
+</head>
+<body>
+    
+    <script>
+
+        // ENONCE
+        // ------------------------------------
+        // Demande à l'utilisateur de saisir le nombre de devoirs à évaluer
+        // Demdande à l'utilisateur de saisir là note de chaque devoir un à un 
+        // Calcule la moyenne de toutes les notes
+        // Affiche dans la page la moyenne avec un message
+        // -------------------------------------
+
+
+        const nombreDevoirs = Number(window.prompt("Combien de devoirs à évaluer ?"))
+        let totalNotes = 0
+        for (let i = 1; i <= nombreDevoirs; i++) {
+            const noteDevoir = Number(window.prompt("Saisis la note du devoir n" + i))
+            // moyennesNotes = totalNotes / nombreDevoirs
+            // totalNotes = note1 + note2 + note3 ....
+            // totalNotes += noteDevoir
+            
+            totalNotes += noteDevoir
+        }
+
+        const moyennesNotes = totalNotes / nombreDevoirs
+        document.write(moyennesNotes)
+
+    </script>
+
+</body>
+</html>

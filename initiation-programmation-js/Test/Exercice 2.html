@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devine mon nombre</title>
+</head>
+<body>
+    
+    <script>
+
+            // Crée une variable monNombre qui contient la valeur 10.
+            // Demande à l'utilisateur de deviner la valeur de monNombre avec window.prompt().
+            // Si l'utilisateur trouve la bonne valeur, affiche "Bravo, tu as deviné !" dans la page.
+            // Sinon, affiche "Désolé, essaie encore !"
+
+
+
+        
+        let monNombre = 10
+        let response = window.prompt("Devine la valeur de mon nombre")
+
+        if (response == monNombre) {
+            
+            document.write("Bravo, tu as deviné !")
+
+        } else {
+
+            document.write("Désolé, essaie encore !")
+
+        }
+
+    </script>
+
+
+<style>
+    body {
+        background-color: aqua;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        font-size: 1.5rem;
+        padding: 10%;
+    }
+</style>
+
+</body>
+</html>

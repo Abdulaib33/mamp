@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste de films préférés</title>
+</head>
+<body>
+    
+
+    <script>
+        
+    // Demande à l'utilisateur ses 3 films préférés.
+    // Affiche les films sous forme d'une liste <ul> dans la page.
+    // Ajoute un message dans le document qui dit "Voici tes films préférés :".
+
+
+
+        let film1 = window.prompt("Quel est ton film préférés")
+        let film2 = window.prompt("Quel est ton deuxième film préféré")
+        let film3 = window.prompt("Quel est ton troisième film préféré")
+
+        document.write("<ul>" + 
+            "<li>" + film1 + "</li>" +
+            "<li>" + film2 + "</li>" +
+            "<li>" + film3 + "</li>" +
+            
+        "</ul>")
+
+
+    </script>
+
+    <style>
+        body {
+            background-color: aqua;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-size: 1.5rem;
+            padding: 10%;
+        }
+    </style>
+
+
+</body>
+</html>

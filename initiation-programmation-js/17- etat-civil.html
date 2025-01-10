@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>etat - civil</title>
+</head>
+<body>
+    
+<script>
+      // ENONCE
+      // -----------------------------------------
+      // Demande le sexe de l'utilisateur
+      // Si il ne répond pas, écris sur la page "Bonjour"
+      // Si c'est un homme, écris sur la page un message "Bonjour Monsieur"
+      // Si c'est une femme, demande lui si elle est mariée
+      // Si elle l'est, écris sur la page un message "Bonjour Madame"
+      // Si elle n'est pas mariée, écris sur la page "Bonjour Mademoiselle"
+
+      // PSEUDO-CODE
+      // -----------------------------------------
+      // Créer une boite sexeUser
+      // Demande à l'utilisateur "Étes vous une femme ou un homme ?" et stock sa réponse dans sexeUser
+      // Si sexeUser est vide alors...
+      //   écris dans le body "Bonjour"
+      // Sinon si sexeUser est égal à "homme" alors...
+      //   écris dans le body "Bonjour Monsieur"
+      // Sinon si sexeUser est égal à "femme" alors...
+      //   Créer une boite : married
+      //   Demande à l'utilisateur "Êtes-vous mariée ?" et stock sa réponse dans married
+      //   Si married est égal à "oui" alors...
+      //     écris dans le body "Bonjour Madame"
+      //   Sinon...
+      //     écris dans le body "Bonjour Mademoiselle"
+
+
+      // PSEUDO-CODE
+      // -----------------------------------------
+      // Crée une boite sexeUser
+      // Demande à l'utilisateur de répondre au message "Étes vous une femme ou un homme ?" et mets la réponse dans la boite : sexeUser
+      // Si sexeUser est vide alors...
+      //   écris dans le body "Bonjour"
+      // Sinon si sexeUser==="homme" alors...
+      //   écris dans le body "Bonjour Monsieur"
+      // Sinon si sexeUser est égal à "femme" alors...
+      //   Crée une boite : married
+      //   Demande à l'utilisateur de répondre au message "Êtes-vous mariée ?" et mets la réponse dans la boite : married
+      //   Si married==="oui" alors...
+      //     écris dans le body "Bonjour Madame"
+      //   Sinon...
+      //     écris dans le body "Bonjour Mademoiselle"
+
+
+      // CODE
+      // -----------------------------------------
+
+      const sexeUser = window.prompt("Êtes vous une femme ou un homme ?");
+      if (sexeUser === "") {
+        document.write("Bonjour");
+      } else if (sexeUser === "homme") {
+        document.write("Bonjour Monsieur");
+      } else if (sexeUser === "femme") {
+        const married = window.prompt("Êtes-vous mariée ?");
+        if (married === "oui") {
+          document.write("Bonjour Madame");
+        } else {
+          document.write("Bonjour Mademoiselle");
+        }
+      }
+
+
+
+
+      const sexe = window.prompt("et-tu un bmme ou une femme")
+      if (sexe === null ) {
+        document.write("Bonjour ")
+      }
+       else if(sexe === "") {
+        document.write("Bonjour")
+      }
+       else if (sexe === "Homme") {
+        document.write("Bonjour Monsieur")
+      }
+       else {
+        const marie = window.confirm("es-tu marie")
+        if (marie == true) {
+            document.write("Bonjour Madame")
+        }   
+        else {
+            document.write("Bonjour mademoiselle")
+        }
+      }
+
+    </script>
+
+</body>
+</html>

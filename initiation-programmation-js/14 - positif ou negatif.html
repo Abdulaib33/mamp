@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positif et negatif</title>
+</head>
+<body>
+
+    
+
+
+        <script>
+        // ENONCE
+        // -----------------------------------------
+        // demande à l'utilisateur de saisir un nombre
+        // si le nombre est positif, avertis que le nombre est positif et écris le nombre dans la page
+        // si le nombre est négatif, avertis que le nombre est négatif et écris le nombre dans la page
+        // si le nombre est 0, avertis que le nombre est 0 et écris le nombre dans la page
+
+        // PSEUDO-CODE
+        // -----------------------------------------
+        // Créer une boite : number
+        // Demande à l'utilisateur de répondre au message "Saisis un nombre" et stocke la réponse dans la boite : number
+        // Test avec une condition :
+        // - Si le nombre est positif, créer une fenetre d'alerte "Le nombre est positif" et écrire dans le body "Le nombre est positif : " + number
+        // - Si le nombre est négatif, créer une fenetre d'alerte "Le nombre est négatif" et écrire dans le body "Le nombre est négatif : " + number
+        // - Si le nombre est égal à 0, créer une fenetre d'alerte "Le nombre est 0" et écrire dans le body "Le nombre est 0 : " + number
+        // CODE
+        // -----------------------------------------
+
+        let number = Number(prompt("Saisis un nombre"))
+        number = Number(number)
+        if (number > 0) {
+          window.alert("Le nombre est positif")
+          document.write("Le nombre est positif : " + number)
+        } else if (number < 0) {
+          window.alert("Le nombre est négatif")
+          document.write("Le nombre est négatif : " + number)
+        } else if(number === 0){
+          window.alert("Le nombre est 0")
+          document.write("Le nombre est 0 : " + number)
+        }
+        else if(number === "") {
+            window.alert("vous n'avez pas saisi de nombre")
+        }
+        else if(number === null) {
+            window.alert(" ta anuller là demande de saisi des nombres")
+        }
+        else {
+            window.alert("c'est ne pas un nombre")
+        }
+
+      </script> 
+
+<style> 
+    body {
+        background-color: aqua;
+    }
+</style>
+
+    
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tour de manege</title>
+</head>
+<body>
+
+
+    <script>
+
+
+        // ENONCE 
+        // ----------------------------------
+        // Demande à l'utilisateur combine de tours de manège il souhiate faire
+        // Ecris dans ala "C'est le tour n-XXX" autant d fois qu'il y a de tours choisis par l'utilisateur
+
+        // let toursChoisi = Number(prompt("Combien des tours tu souhaite faire ?"))
+
+        // for (let i = 0; i <= toursChoisi; i++) {
+        //     document.write("C'est le tours N:" + i + "<br>")
+        // }
+
+
+        // ENONCE 
+        // Demande combien de jouets maman est d'accord d'offrir pour St-Nicolas
+        // demande combien de jouets papa est d'accord d'offrir
+        // comme on veut làa paix dans le couple, St-Nicolas offrira un nombre de jouets égal à là moyenne des parents
+        // ecris dans la page le nombre de jouets offerts par St-Nicolas en les numérotant (avec au moins un jouet). 
+        // On écrit donc "Jouer n-X" autant de fois que nécessaire
+
+
+        // let jouetMamanOff = Number(window.prompt("Combien des jouets maman veut offrir"))
+        // let jouetPapaOff = Number(window.prompt("Combien des jouets papa veut offrir"))
+
+        // let moyenne = (jouetMamanOff + jouetPapaOff)  / 2;
+
+        // for (let i = 1; i <= moyenne; i++) {
+        //     document.write("Jouet n-" + i + "<br>")
+        // }
+
+
+        // ENONCE 
+        // -----------------------------------------------
+        // Demande à l'utilisateur de saisir le nombre de produits dans son panier d'achat 
+        // Demander à l'utilisateur de saisir le prix de chaque produit un à un 
+        // Calcule le total des achats
+        // Affiche dans la page le total avec un message 
+        // ------------------------------------------------
+
+        let NombreProduit = Number(window.prompt("Combien le nombre des produits dans ton panier"))
+        var total = 0;
+        
+        for (let i = 1; i <= NombreProduit; i++) {
+
+            let PrixProduit = Number(window.prompt("saisi le prix du produit n " + i))
+
+            total = total += PrixProduit
+            // OR total += PrixProduit 
+
+            if (i => NombreProduit) {
+                document.write(total)
+            }
+
+        }
+
+        // CORRECTION ENONCE précédent 
+        // -----------------------------------------
+
+        const nbProduits = Number(window.prompt("Combien as-tu de produit dans ton panier"))
+        for (let i = 1; i <= nbProduits; i++) {
+            let prixProduits = Number(window.prompt("saisi le prix du produit n" + i))
+            totalAchats += prixProduits
+        }
+        document.write("Le total de tes achats s'élèves à : " + totalAchats)
+        
+        
+    </script>
+    
+    
+</body>
+</html>

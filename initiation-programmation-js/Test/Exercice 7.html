@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable et type</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+// Crée une variable avec ton nom.
+// Crée une autre variable avec ton âge.
+// Affiche un message dans la page qui dit : "Je m'appelle [ton nom] et j'ai [ton âge] ans".
+// Affiche le type des variables avec typeof.
+
+
+let nom = window.prompt("Quel est ton nom")
+let âge = window.prompt("Quel est ton âge")
+
+ nom = String(nom)
+ âge = Number(âge)
+
+ document.write("Je m'appelle " + nom + "  " +  "et j'ai " + âge + "ans !" + "<br>")
+        document.write(typeof(nom) + "<br>")
+        document.write(typeof(âge))
+    </script>
+
+
+    <style>
+        body {
+            background-color: aqua;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-size: 1.5rem;
+            padding: 10%;
+        }
+    </style>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salut l'utilisateur</title>
+</head>
+<body>
+
+    <script>
+            // Crée une alerte qui affiche "Salut, bienvenue sur mon site !".
+            // Demande à l'utilisateur de confirmer s'il veut continuer avec window.confirm().
+            // Affiche dans le document la réponse de l'utilisateur ("Oui, je veux continuer" ou "Non, je ne veux pas continuer").
+
+
+
+
+        window.alert("Salut, bienvenue sur mon site !")
+        let response = window.confirm("Veut-tu continuer")
+
+        if (response === true) {
+            document.write("Oui je veux continuer")
+        } else if (response === false) {
+            document.write("Non je ne veux pas continuer")
+        } else {
+            document.write("tu ne pas supposé me voir ")
+        }
+
+
+    </script>
+
+<style>
+    body {
+        background-color: aqua;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        font-size: 1.5rem;
+        padding: 10%;
+    }
+</style>
+    
+</body>
+</html>

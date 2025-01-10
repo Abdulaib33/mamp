@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vive la pêche</title>
+</head>
+<body>
+    <script>
+        // ENONCE
+        // ------------------------------------------------
+        // Demande à l'utilisateur s'il aime pêcher
+        // S'il apprécie cette activité, demande lui quel est son poisson préféré
+        // Si pêcher n'est pas on truc, dis-lui que tu comprends car c'est une activité qui demande de la patience
+        // Si c'est le poisson-clown, écris sur la page qu'on ne peut pas manger Nemo !
+        // Si c'est le chirurgien-bleu, écris sur la page qu'il est hors de question de manger Dory !
+        // Si c'est ni l'un, ni l'autre, souhaite-lui un bon appétit.
+        // ------------------------------------------------
+
+        const aimeLaPeche=window.confirm("Aimes-tu la pêche ?");
+        if(aimeLaPeche) {
+            const poissonPrefere=window.prompt("Quel est ton poisson préféré ?");
+            if(poissonPrefere==="poisson-clown") {
+                document.write("On ne peut pas manger Némo !");
+            }
+            else if(poissonPrefere==="chirurgien-bleu") {
+                document.write("Hors de question de manger Dory !");
+            }
+            else {
+                document.write("Bonne pêche et bon appétit.");
+            }
+        }
+        else {
+            document.write("Je comprends, c'est time consuming.");
+        }
+
+    </script>
+</body>
+</html>
+
+
+
+
+

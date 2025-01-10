@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu Chasseur de Monstre</title>
+</head>
+<body style="text-align: center; padding: 10%; font-family: Arial, sans-serif;">
+
+    <style>
+        body {
+            background-color: aqua;
+        }
+    </style>
+
+    <h1 id="title">Bienvenue dans le Jeu Chasseur de Monstre</h1>
+    <p id="content"></p>
+    <button id="replayButton" style="display: none;">Rejouer</button>
+
+    <script>
+        // Initialisation
+        let playerName = window.prompt("Quel est votre nom ?");
+        let favoriteColor = window.prompt("Quelle est votre couleur préférée ?");
+        document.body.style.backgroundColor = favoriteColor;
+        document.title = "Bienvenue, " + playerName;
+        document.getElementById("title").innerText = "Bonjour " + playerName + ", prêt pour l'aventure ?";
+
+        // Choix du chasseur
+        let chasseur = window.prompt("Choisissez votre chasseur : Chevalier, Magicien ou Archer");
+        let pvChasseur;
+        switch (chasseur.toLowerCase()) {
+            case "chevalier":
+                pvChasseur = 100;
+                break;
+            case "magicien":
+                pvChasseur = 80;
+                break;
+            case "archer":
+                pvChasseur = 90;
+                break;
+            default:
+                alert("Choix invalide, vous serez un simple Aventurier avec 50 PV.");
+                pvChasseur = 50;
+        }
+        let pvMonstre = 100;
+
+        // Boucle de combat
+        while (pvChasseur > 0 && pvMonstre > 0) {
+            let action = window.prompt("Choisissez une action : Attaque rapide, Attaque puissante, Défense");
+            let damageToMonster = 0;
+            let damageToPlayer = 0;
+
+            switch (action.toLowerCase()) {
+                case "attaque rapide":
+                    damageToMonster = 10;
+                    damageToPlayer = 5;
+                    break;
+                case "attaque puissante":
+                    damageToMonster = 20;
+                    damageToPlayer = 15;
+                    break;
+                case "défense":
+                    damageToMonster = 0;
+                    damageToPlayer = 3;
+                    break;
+                default:
+                    alert("Action invalide, vous perdez du temps !");
+                    damageToPlayer = 10;
+            }
+
+            pvMonstre -= damageToMonster;
+            pvChasseur -= damageToPlayer;
+            document.getElementById("content").innerHTML = `Vous avez infligé ${damageToMonster} au monstre. <br>Le monstre vous a infligé ${damageToPlayer}. <br>PV du chasseur : ${pvChasseur}, PV du monstre : ${pvMonstre}.<br><br>`;
+        }
+
+        // Fin du jeu
+        if (pvChasseur <= 0) {
+            document.getElementById("content").innerHTML += "<br>Dommage, vous avez perdu. PV restants du monstre : " + pvMonstre;
+        } else {
+            document.getElementById("content").innerHTML += "<br>Félicitations " + playerName + ", vous avez vaincu le monstre ! PV restants : " + pvChasseur;
+        }
+
+        // Rejouer
+        document.getElementById("replayButton").style.display = "inline";
+        document.getElementById("replayButton").onclick = function() {
+            window.location.reload();
+        };
+    </script>
+
+    
+
+</body>
+</html>

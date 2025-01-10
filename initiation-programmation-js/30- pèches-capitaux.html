@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>peches capitaux</title>
+</head>
+<body>
+
+    <script>
+        // ENONCE 
+        // ------------------------------------------
+        // Demande à l'utilisateur s'il souhaite connaître les 7 péchés capitaux
+        // En fonction de sa réponse, écris la lsite ordonnnée (en utilisant ol -> li) 7 des péchées capitaux sachant que ceux-ci sont stockés dans un tableau
+        // ------------------------------------------
+
+
+        const pecheCapiteuax = [
+            "Envie",
+            "Luxure",
+            "Gourmandise",
+            "Colère",
+            "Orgueil",
+            "Paresse",
+            "Avarice"
+        ]
+
+        let responsesisessss = window.prompt("As-tu envie de connaitres les 7 péches capitaux ? Oui / Non")
+
+        if (responsesisessss) {
+            document.write("<ol>")
+            for (let i = 0; i < pecheCapiteuax.length; i++)
+            document.write(i + " " + pecheCapiteuax[i] + "<br>")
+            document.write("</ol>")
+        } else {
+            window.alert("DEHOOOORSSSSSS !!!!!!!!")
+            window.confirm("DEHOOOORSSSSSS !!!!!!!!")
+            document.write("DEHOOOORSSSSSS !!!!!!!!")
+        }
+
+    </script>
+    
+</body>
+</html>
