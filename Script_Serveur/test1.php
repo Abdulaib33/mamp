@@ -6,7 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    
+<style>
+    body {
+        background-color: darkslategray;
+        color: wheat;
+    }
+</style>
     <?php 
     
         echo "COUCOUCOUCOUCOCUC";
