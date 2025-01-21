@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Les attributs HTML</title>
+  </head>
+  <body>
+    <h1>Les attributs HTML</h1>
+    <!-- nav>ul>li*3>a>{Lien $} -->
+    <nav id="nav1">
+      <ul>
+        <li><a href="">Lien 1</a></li>
+        <li><a href="">Lien 2</a></li>
+        <li><a href="">Lien 3</a></li>
+      </ul>
+    </nav>
+    <form action="" id="form1">
+      <input type="text" placeholder="John" id="firsname" />
+      <input type="checkbox" checked id="newsletter" />
+    </form>
+    <!-- // Modifiez le href du second lien du #nav1 avec http://www.promotion-sociale.be
+
+
+      // Mettez une value à l'input #firstname
+      // Modifiez le placeholder de #firstbame avec 'Alex'
+      // Modifiez le checked de #newsletter avec false
+      // Modifiez l'action du #form1 avec http:://www.google.be
+
+
+      // document.querySelectorAll("#nav1 ul > li > a ").forEach(lien => {
+        //     lien.textContent = "COUCOUCU"
+        // });
+
+        // document.querySelectorAll("#form1").forEach(checkInput => {
+        //     checkInput[0].setAttribute('type', "checkbox").checked = true
+        // });
+         -->
+    <script>
+
+        // Modifiez le href du second lien du #nav1 avec http://www.promotion-sociale.be
+        const secondLink = document.querySelector('#nav1 ul li:nth-child(2) a')
+        secondLink.href = 'http://www.promotion-sociale.be'
+
+        // Mettez une value à l'input #firstname
+        const firstname = document.querySelector('#firsname')
+        firstname.value = 'Abdoulaye'
+        // firstname.setAttribute(value, "Abdoulaye")
+
+        // Modifiez le placeholder de #firstbame avec 'Alex'
+        firstname.placeholder = 'Abdoulaye'
+
+        // Modifiez le checked de #newsletter avec false
+        const newsletter = document.querySelector('#newsletter')
+        newsletter.checked = false
+
+        // Modifiez l'action du #form1 avec http:://www.google.be
+        const form1 = document.querySelector('#form1')
+        form1.action = 'http://www.google.be'
+            
+
+    </script>
+  </body>
+</html>

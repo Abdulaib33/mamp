@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Derniers articles</h1>
+    <div>Nombre total d'articles: <span id="articles-count">xxx</span></div>
+    <article class="article">
+      <h2 class="article-title">Titre de l'article 1</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut dolores
+        quo illum saepe, esse magnam tempore eos modi placeat delectus tempora
+        rem doloribus accusantium non, repudiandae est itaque sed quae.
+      </p>
+    </article>
+    <article class="article">
+      <h2 class="article-title">Titre de l'article 2</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut dolores
+        quo illum saepe, esse magnam tempore eos modi placeat delectus tempora
+        rem doloribus accusantium non, repudiandae est itaque sed quae.
+      </p>
+    </article>
+    <article class="article">
+      <h2 class="article-title">Titre de l'article 3</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut dolores
+        quo illum saepe, esse magnam tempore eos modi placeat delectus tempora
+        rem doloribus accusantium non, repudiandae est itaque sed quae.
+      </p>
+    </article>
+
+    <script>
+        // 1. Affichez le nombre d'articles dans #articles-count
+        const articles = document.querySelectorAll('.article')
+        const articlesCount = document.getElementById('articles-count')
+        articlesCount.textContent = articles.length
+
+
+        // 2. Ajoutez '!' à la fin de tout les titres des articles
+        const articleTitles = document.querySelectorAll('.article-title')
+        articleTitles.forEach(title => {
+            title.textContent += ' !'
+        })
+
+    </script>
+  </body>
+</html>
