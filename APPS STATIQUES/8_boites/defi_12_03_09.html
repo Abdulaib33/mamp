@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mountain View</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+
+      body {
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-size: 1.2em;
+      }
+
+
+      /* CARD COMPONENT */
+      .card {
+        background: 0 0 / cover url("montagnes.jpg") no-repeat;
+        width: 100%;
+        max-width: 300px;
+        height: 478px;
+        box-shadow: 0 0 10px #aaa;
+        color: #fff;
+        margin: auto;
+        overflow: hidden;
+      }
+
+
+      .card-content {
+        width: 100%;
+        height: 100%;
+        padding: 2em;
+        text-align: center;
+
+
+        padding-top: 380px;
+        transition: all 1000ms;
+      }
+      .card:hover .card-content {
+        padding-top: 6em;
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+      /* CARD TITLE */
+      .card-title {
+        font-size: 1.5em;
+        margin: 0 0 3em 0;
+      }
+      .card:hover .card-title {
+        margin-bottom: 1em;
+      }
+
+
+      /* CTA COMPONENT */
+      .cta {
+        display: inline-block;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 0.9em;
+        background: #444;
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 0.5em 0.8em;
+      }
+
+      .cta:hover {
+        background-color: #222;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-content">
+        <h1 class="card-title">Mountain View</h1>
+        <p>
+          Check out all of these gorgeous mountain trips with beautiful views
+          of, you guessed it, the mountains
+        </p>
+        <div><a href="#" class="cta">View Trips</a></div>
+      </div>
+    </div>
+  </body>
+</html>
