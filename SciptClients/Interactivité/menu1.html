@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #div1 {
+        background: orange;
+        width: 100px;
+        height: 100px;
+      }
+
+      #div1.active {
+        width: 500px;
+        transition: 2000ms;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Composant interactif</h1>
+    <nav>
+      <ul>
+        <li><a href="#" id="lien1">Lien 1</a></li>
+      </ul>
+    </nav>
+    <div id="div1"></div>
+
+
+
+    <script>
+
+        document.querySelector('nav #lien1').onmouseover = function () {
+            document.querySelector("#div1").classList.toggle('active')
+        }
+
+    </script>
+  </body>
+</html>

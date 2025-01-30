@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    
+    <h1 id="titre1">Exercices 2</h1>
+    <nav id="main-nav" title="Menu principal">
+        <ul>
+            <li><a href="" data-price="45">Lien 1</a></li>
+            <li><a href="" data-price="56">Lien 2</a></li>
+            <li><a href="" data-price="78">Lien 3</a></li>
+          </ul>    
+    </nav>
+
+    <figure id="figure1">
+        <img src="nez1.jpg" alt="Nez 1" />
+        <figcaption>Nez 1</figcaption>
+    </figure>
+  
+  
+
+    <script>
+        // 1. Mettez dans le titre du document le contenu textuel du H1
+
+        let ex1 = document.querySelector("#titre1").innerText
+        document.title = ex1
+
+        // 2. Mettez "COUCOU" dans le title du nav
+
+        ex2 = document.querySelector("#main-nav")
+        ex2.title = "COUCOU"
+
+        // 3. Mettez "#" dans tous les href des liens du nav
+        ex3 = document.querySelector('nav a');
+        ex3.forEach( (lien) => {
+            lien.href = "#";
+        })
+
+        // 4. Mettez 'nez2.jpg' dans l'img et changez le alt
+        //      et le figcaption avec 'Nez 2'
+
+        ex4 = document.querySelector("#figure1 img")
+        ex4.src = "nez2.jpg"
+        ex4.alt = "Nez 2"
+
+        ex4.forEach( (img4) => {
+            img4.src = "nez2.jpg"
+            ex4.alt = "Nez 2"
+        })
+
+        ex4_1 = document.querySelector(figcaption)
+        ex4_1.innerText = "Nez 2"
+
+
+        // Modifier le data-price de l'item 1 avec 55
+        document.querySelector("#main-nav li:first-of-type a ")
+
+        // Multipliez par 2 tous les data-price des liens du main-nav
+
+        exRandom = document.querySelectorAll("#main-nav a")
+        exRandom.forEach( (data) => {
+            data.dataset.price = data.dataset.price * 2
+        })
+    </script>
+
+</body>
+</html>

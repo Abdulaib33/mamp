@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <!-- ./ exercice_capture_1.html -->
+<!--
+	Crée un simple lien et fais en sorte que lorsque 
+    l'on clique dessus, fais un console.log avec comme 
+    message: "Vous avez cliqué sur le lien !!!"
+	Le gestionnaire doit se trouver DANS la balise HTML
+-->
+
+    <a href="#" onclick="ex_cap_1()">COUCOU</a>
+
+    <script>
+        function ex_cap_1() {
+            alert('Vous avez cliqué sur le lien');
+        }
+    </script>
+
+<!-- ./ exercice_capture_2.html -->
+<!--
+	Crée un input de type button avec un id 'monBouton' 
+	et fais en sorte que quand on clique dessus, 
+	il y a un alert avec comme message
+		"Vous avez cliqué sur le bouton !"
+    Le gestionnaire doit se trouver dans un script interne en bas du body
+-->
+
+    <input type="button" id="monBouton" value="clique moi">
+    
+    <script>
+        document.getElementById("monBouton").onclick = function () {
+            alert('Vous avez cliqué sur le button')
+        }
+    </script>
+
+<!--  exercice_capture_3.html -->
+<!--
+	Crée un lien avec un id 'monLien' 
+	et fais en sorte que quand on clique dessus, 
+	il y a un alert avec comme message
+		"Vous avez cliqué sur le lien !"
+    Le gestionnaire doit se trouver dans un script externe nommé 'exercice_capture_3.js'
+-->
+
+    <a href="" id="monLien">HEHE</a>
+
+    <script>
+        document.getElementById('monLien').onclick = function () {
+            alert("Vous avez cliqué sur le lien")
+        }
+    </script>
+
+
+<nav>
+    <ul>
+      <li><a href="#" id="lien1">Lien 1</a></li>
+      <li><a href="#" id="lien2">Lien 2</a></li>
+      <li><a href="#">Lien 3</a></li>
+    </ul>
+  </nav>
+
+  <!-- Quand on clique sur le lien 1 mets "Coucou" dans le title du document
+Quand on clique sur le lien 2 fais un alert "Coucou"
+Quand on clique sur le lien 3 fais un alert avec le contenu du title du document -->
+
+<script>
+    let lien1 = document.getElementById('lien1').onclick = function () {
+        document.title = "COUCOU"
+    }
+
+    let lien2 = document.getElementById('lien2').onclick = function () {
+        alert('Coucou')
+    }
+
+    let lien3 = document.querySelector('nav > ul:last-child').onclick = function () {
+        alert(document.title)
+    }
+</script>
+
+
+<!-- Défi 1 : Pars du code suivant et fais en sorte que lorsque l'on clique sur un des liens du #menu, on mette le texte du lien dans #div1.
+Astuces: 
+
+utilise le mot clé 'this' pour capturer le contenu textuel du lien
+Le contenu textuel d'un élément est la propriété 'text' de l'élément -->
+<nav id="menu">
+    <ul>
+   <li><a href="#">Lien 1</a></li>
+   <li><a href="#">Lien 2</a></li>
+   <li><a href="#">Lien 3</a></li>
+   <li><a href="#">Lien 4</a></li>
+   <li><a href="#">Lien 5</a></li>
+    </ul>
+  </nav>
+  <div id="div1"></div>
+
+<script>
+    // Sélectionne tous les liens dans #menu
+    let menuDefi1 = document.querySelectorAll('#menu a')
+    
+    // Sélectionne tous les liens dans #menu
+    menuDefi1.forEach(function (lien) {
+        lien.addEventListener('click',function (lien) {
+            aler(this.lien)
+        })
+    })
+
+</script>
+
+</body>
+</html>

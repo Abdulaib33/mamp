@@ -1,0 +1,49 @@
+/* PARAMÈTRES PAR DEFAUT */
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  background: #ccc;
+  font-family: Poppins, Verdana, arial, sans-serif;
+  font-size: 1.5em;
+  color: #777;
+}
+
+
+a {
+  text-decoration: none;
+  color: #2fbca1;
+  font-weight: bold;
+}
+
+
+article h1 {
+  font-size: 1.8em;
+  color: #555;
+  line-height: 1.2em;
+}
+article time {
+  font-weight: 700;
+  font-size: 0.9em;
+}
+
+
+/* COMPONENTS */
+/* 
+.container
+.habillage--gauche
+.habillage--droite
+.citation 
+*/
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+
+
+  /* Ceci n'a rien à faire là ! */
+  background: #fff;
+  padding: 2em;
+}

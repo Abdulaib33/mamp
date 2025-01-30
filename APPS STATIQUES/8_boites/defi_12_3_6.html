@@ -7,5 +7,57 @@
 </head>
 <body>
     
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 1.2em;
+        }
+
+        /* CARD-USER COMPONENT */
+        .card-user {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            border-radius: 10px;
+            background: 1em 1em / 70px url(user3.png), no-repeat, linear-gradient(90deg, red, orange);
+            box-shadow: 0 0 10px #999;
+            padding: 2em 2em 2em calc(70px + 3em);
+            color: #fff;
+        }
+
+        .card-user--title {
+            margin-top: 0;
+        }
+
+        .card-user--cta {
+            display: inline-block;
+            background-color: rgb(255, 255, 255);
+            padding: 0.5em 0.8em;
+            border-radius: 10px;
+            text-decoration: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .card-user--vertical {
+            max-width: 250px;
+            padding: calc(70px + 3em) 2em 2em 2em;
+        }
+    </style>
+
+<div class="card-user">
+    <h1 class="card-user--title">John Doe</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut quas dignissimos, explicabo laboriosam ullam pariatur ea fugiat.</p>
+    <div><a href="#" class="card-user--cta">Contact me</a></div>
+</div>
+
+<div class="card-user--vertical">
+    <h1 class="card-user--title">John Doe</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut quas dignissimos, explicabo laboriosam ullam pariatur ea fugiat.</p>
+    <div><a href="#" class="card-user--cta">Contact me</a></div>
+</div>
+
 </body>
 </html>

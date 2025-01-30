@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .active {
+        background: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="titre1">Interactivité</h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="#" id="lien1" onclick="window.alert('coucou');">Lien 1</a>
+        </li>
+        <li><a href="#" id="lien2">Lien 2</a></li>
+        <li><a href="#" id="lien3">Lien 3</a></li>
+        <li><a href="#" id="lien4">Lien 4</a></li>
+        <li><a href="#" id="lien5">Lien 5</a></li>
+        <li><a href="#" id="lien6">Lien 6</a></li>
+      </ul>
+    </nav>
+    <p id="para1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique amet
+      saepe consequatur quos qui ut voluptas quisquam pariatur aut aliquid, quod
+      nobis non, illum voluptatum dolor modi fugiat provident! Enim!
+    </p>
+    <script>
+      // Quand on clique sur #lien2
+      document.getElementById("lien2").onclick = function () {
+        alert("Oufti !");
+      };
+
+      // Quand on clique sur #lien3, on met du rouge en fond du h1
+
+      document.getElementById("lien3").onclick = function (e) {
+        e.preventDefault();
+        document.getElementById("titre1").style.background = "red";
+      };
+
+      // Quand on clique sur #lien4, on ajoute la classe 'active' à #para1
+      document.getElementById("lien4").onclick = function (e) {
+        e.preventDefault();
+        document.getElementById("para1").classList.add("active");
+      };
+
+      // Quand on clique sur #lien5, on supprime la classe 'active' à #para1
+      document.getElementById("lien5").onclick = function (e) {
+        e.preventDefault();
+        document.getElementById("para1").classList.remove("active");
+      };
+
+      // Quand on clique sur #lien6, on toggle la classe 'active' à #para1
+      document.getElementById("lien6").onclick = function (e) {
+        e.preventDefault();
+        document.getElementById("para1").classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
