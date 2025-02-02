@@ -1,34 +1,29 @@
-/* PARAMÈTRES PAR DEFAUT */
-* {
-  box-sizing: border-box;
-}
-
+/*IL EST ICI L'IMPORT, SI TU NE LA PAS VU*/
+@import url('variables.css');
 
 body {
-  background: #ccc;
-  font-family: Poppins, Verdana, arial, sans-serif;
-  font-size: 1.5em;
-  color: #777;
+background: #ccc;
+font-family: Poppins, Verdana, arial, sans-serif;
+font-size: 1.5em;
+font-weight: 200;
+color: #777;
 }
-
 
 a {
-  text-decoration: none;
-  color: #2fbca1;
-  font-weight: bold;
+text-decoration: none;
+color: #2fbca1;
+font-weight: bold;
 }
-
 
 article h1 {
-  font-size: 1.8em;
-  color: #555;
-  line-height: 1.2em;
+font-size: 1.8em;
+color: #555;
+line-height: 1.2em;
 }
 article time {
-  font-weight: 700;
-  font-size: 0.9em;
+font-weight: 700;
+font-size: 0.9em;
 }
-
 
 /* COMPONENTS */
 /* 
@@ -38,12 +33,29 @@ article time {
 .citation 
 */
 .container {
-  width: 100%;
-  max-width: 800px;
-  margin: auto;
+width: 100%;
+max-width: 800px;
+margin: auto;
 
+/* Ceci n'a rien à faire là ! */
+background: #fff;
+padding: 2em;
+}
 
-  /* Ceci n'a rien à faire là ! */
-  background: #fff;
-  padding: 2em;
+.citation {
+border-left: #2fbca1 0.3em solid;
+margin-left: 0;
+padding-left: 2em;
+}
+
+.habillage-droite {
+float: left;
+margin-left: 0;
+margin-top: 0;
+}
+
+.habillage-gauche {
+    float: right;
+    margin-right: 0;
+    margin-top: 0;
 }

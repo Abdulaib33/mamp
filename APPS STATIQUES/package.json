@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "fireworks": "^2.2.7",
+    "fireworks-js": "^2.10.8"
+  }
+}

@@ -21,9 +21,8 @@ $products = [
         background-color: darkslategray;
         color: wheat;
     }
-    .price {
-        color: lightgreen;
-        font-weight: bold;
+    a {
+        text-decoration: none;
     }
 
 </style>

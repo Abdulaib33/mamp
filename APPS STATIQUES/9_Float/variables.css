@@ -1,0 +1,19 @@
+    /* VARIABLES */
+    :root {
+        /* COLORS */
+        --colorPrimary: orange;
+      
+        /* CONTAINER */
+        --containerWidth: 800px;
+      
+        /* CITATION */
+        --citationBorderColor: var(--colorPrimary);
+        --citationBorderWidth: 0.3em;
+        --citationPaddingLeft: 2em;
+        --citationCiteFontSize: 0.6em;
+      }
+      
+      /* PARAMÈTRES PAR DEFAUT */
+      * {
+        box-sizing: border-box;
+      }
